@@ -3,31 +3,76 @@
 @tailwind utilities;
 
 :root {
+  --color-text-default: #fff;
+
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --color-primary-red: #cc3333;
+  --color-primary-red-light: #ff413f;
+  --color-primary-red-dark: #b42d2e;
+
+  --color-primary-blue: #306fb4;
+  --color-primary-blue-light: #609cdb;
+  --color-primary-blue-dark: #0b4a8d;
+
+  --color-primary-yellow-light: #ffd700;
+  --color-primary-yellow: #ffe94d;
+  --color-primary-yellow-dark: #ccaa00;
+
+  /* These colors are for testing purposes only: */
+  --color-primary-purple-light: #a571dc;
+  --color-primary-purple: #722fb7;
+  --color-primary-purple-dark: #3f1968;
+
+  --color-primary-green-light: #6fdb93;
+  --color-primary-green: #2fb75c;
+  --color-primary-green-dark: #156632;
+
+  --color-primary-orange-light: #f98d52;
+  --color-primary-orange: #dd5208;
+  --color-primary-orange-dark: #7c2d02;
+
+  --color-primary-teal-light: #31feea;
+  --color-primary-teal: #12b3ae;
+  --color-primary-teal-dark: #004e4a;
+
+  --color-primary-brown-light: #a87f70;
+  --color-primary-brown: #704f43;
+  --color-primary-brown-dark: #32211b;
+
+  --color-primary-pink-light: #f68aae;
+  --color-primary-pink: #eb2e6e;
+  --color-primary-pink-dark: #a40d42;
+
+  --color-primary-indigo-light: #5e2eeb;
+  --color-primary-indigo: #480fa4;
+  --color-primary-indigo-dark: #280649;
+
+  --color-primary-offwhite-light: #f8f0f2;
+  --color-primary-offwhite: #d9d9d9;
+  --color-primary-offwhite-dark: #a6a6a6;
+
+  --color-primary-tablegray-light: #56585c;
+  --color-primary-tablegray: #434549;
+  --color-primary-tablegray-dark: #24262a;
+
+  --color-primary-dropicongray-light: #a7a5a6;
+  --color-primary-dropicongray: #8c8c8c;
+  --color-primary-dropicongray-dark: #737373;
+
+  --color-primary-dividergray-light: #c2bebf;
+  --color-primary-dividergray: #808080;
+  --color-primary-dividergray-dark: #5a5959;
+
+  --color-background: #252629;
+  --color-background-searchbar: #1e1e1e;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+ background-color: rgb(240, 240, 240);
+ color: black;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+
