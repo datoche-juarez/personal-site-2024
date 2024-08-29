@@ -4,6 +4,12 @@ interface LayoutProps {
   children: ReactNode;
 }
 
+export const metadata = {
+  title: "Daniel Atoche-Juarez",
+  description:
+    "Explore the professional portfolio and projects of Daniel Atoche-Juarez, a skilled web developer specializing in both frontend and backend development. Discover his expertise in modern web technologies, including Next.js, TypeScript, and Tailwind CSS.",
+};
+
 const Layout = ({ children }: LayoutProps) => {
   return (
     <div>
