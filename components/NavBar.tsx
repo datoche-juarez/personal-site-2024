@@ -1,8 +1,9 @@
 const NavBar = () => {
   return (
-    <header className="sticky top-0 bg-white shadow">
-      <nav className="container mx-auto p-4 flex justify-between">
+    <header className="">
+      <nav className="border border-purple gap-4 py-4 text-lg text-white flex justify-between">
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
