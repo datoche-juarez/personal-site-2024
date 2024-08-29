@@ -1,22 +1,24 @@
+import Section from "@/components/Section";
+
 export default function Home() {
   return (
-    <main className="">
-      <section id="about" className="min-h-screen py-16">
+    <main>
+      <Section id="about">
         <h2 className="text-3xl font-bold">About</h2>
         <p className="mt-4">
           I'm a web developer with over three years of experience in both
           frontend and backend development...
         </p>
-      </section>
-      <section id="portfolio" className="min-h-screen py-16">
+      </Section>
+      <Section id="portfolio">
         <h2 className="text-3xl font-bold">Portfolio</h2>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="border p-4">Project 1</div>
           <div className="border p-4">Project 2</div>
           <div className="border p-4">Project 3</div>
         </div>
-      </section>
-      <section id="resume" className="min-h-screen py-16">
+      </Section>
+      <Section id="resume">
         <h2 className="text-3xl font-bold">Resume</h2>
         <ul className="mt-4">
           <li className="mb-4">
@@ -24,8 +26,8 @@ export default function Home() {
             <p>Brief description of your role and accomplishments.</p>
           </li>
         </ul>
-      </section>
-      <section id="contact" className="min-h-screen py-16">
+      </Section>
+      <Section id="contact">
         <h2 className="text-3xl font-bold">Contact</h2>
         <form className="mt-4">
           <div className="mb-4">
@@ -53,7 +55,7 @@ export default function Home() {
             Submit
           </button>
         </form>
-      </section>
+      </Section>
     </main>
   );
 }
