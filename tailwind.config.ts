@@ -107,24 +107,10 @@ module.exports = {
             fontWeight: "700",
           },
         ],
-        "m-h1": [
-          "3rem",
-          {
-            lineHeight: "3.6rem",
-            fontWeight: "700",
-          },
-        ],
         h2: [
           "3.5rem",
           {
             lineHeight: "4.2rem",
-            fontWeight: "500",
-          },
-        ],
-        "m-h2": [
-          "2.25rem",
-          {
-            lineHeight: "2.7rem",
             fontWeight: "500",
           },
         ],
@@ -135,24 +121,10 @@ module.exports = {
             fontWeight: "500",
           },
         ],
-        "m-h3": [
-          "1.875rem",
-          {
-            lineHeight: "2.3438rem",
-            fontWeight: "500",
-          },
-        ],
         h4: [
           "2.125rem",
           {
             lineHeight: "2.7625rem",
-            fontWeight: "500",
-          },
-        ],
-        "m-h4": [
-          "1.5rem",
-          {
-            lineHeight: "1.95rem",
             fontWeight: "500",
           },
         ],
@@ -163,135 +135,11 @@ module.exports = {
             fontWeight: "500",
           },
         ],
-        "m-h5": [
-          "1.25rem",
-          {
-            lineHeight: "1.75rem",
-            fontWeight: "500",
-          },
-        ],
         h6: [
           "1.25rem",
           {
             lineHeight: "1.875rem",
             fontWeight: "500",
-          },
-        ],
-        "m-h6": [
-          "1.125rem",
-          {
-            lineHeight: "1.6875rem",
-            fontWeight: "500",
-          },
-        ],
-        subheader: [
-          "1.375rem",
-          {
-            lineHeight: "1.925rem",
-            fontWeight: "500",
-          },
-        ],
-        "m-subheader": [
-          "1.125rem",
-          {
-            lineHeight: "1.575rem",
-            fontWeight: "500",
-          },
-        ],
-        body1: [
-          "1.125rem",
-          {
-            lineHeight: "1.6875rem",
-            fontWeight: "400",
-          },
-        ],
-        "m-body1": [
-          "1rem",
-          {
-            lineHeight: "1.5rem",
-            fontWeight: "400",
-          },
-        ],
-        body2: [
-          "1rem",
-          {
-            lineHeight: "1.5rem",
-            fontWeight: "400",
-          },
-        ],
-        "m-body2": [
-          "0.875rem",
-          {
-            lineHeight: "1.3125rem",
-            fontWeight: "400",
-          },
-        ],
-        caption: [
-          "0.875rem",
-          {
-            lineHeight: "1.225rem",
-            fontWeight: "400",
-          },
-        ],
-        "m-caption": [
-          "0.75rem",
-          {
-            lineHeight: "1.05rem",
-            fontWeight: "400",
-          },
-        ],
-        disclosure: [
-          "0.75rem",
-          {
-            lineHeight: "1.05rem",
-            fontWeight: "400",
-          },
-        ],
-        "m-disclosure": [
-          "0.625rem",
-          {
-            lineHeight: "0.875rem",
-            fontWeight: "400",
-          },
-        ],
-        btn: [
-          "1.125rem",
-          {
-            lineHeight: "1.4625rem",
-            fontWeight: "500",
-          },
-        ],
-        "m-btn": [
-          "1rem",
-          {
-            lineHeight: "1.3rem",
-            fontWeight: "500",
-          },
-        ],
-        link: [
-          "1.125rem",
-          {
-            lineHeight: "1.6875rem",
-            fontWeight: "400",
-          },
-        ],
-        "m-link": [
-          "1rem",
-          {
-            lineHeight: "1.5rem",
-            fontWeight: "400",
-          },
-        ],
-        "32px": [
-          "32px",
-          {
-            lineHeight: "2.5rem",
-          },
-        ],
-        "40px": [
-          "40px",
-          {
-            lineHeight: "2.5rem",
           },
         ],
       },
