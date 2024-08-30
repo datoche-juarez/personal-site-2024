@@ -101,10 +101,11 @@ module.exports = {
       },
       fontSize: {
         h1: [
-          "4.625rem",
+        // 40px
+          "2.5rem",
           {
-            lineHeight: "5.55rem",
-            fontWeight: "700",
+            lineHeight: "3.125rem",
+            fontWeight: "500",
           },
         ],
         h2: [
