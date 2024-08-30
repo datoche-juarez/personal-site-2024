@@ -47,7 +47,9 @@ export default function Home() {
         <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
           My Skills
         </h2>
-        <IconMarquee />
+        <div className="mt-8 md:mt-10">
+          <IconMarquee />
+        </div>
         <p className="mt-8 md:mt-10">Add skills list here..</p>
       </Section>
       <Section id="portfolio">

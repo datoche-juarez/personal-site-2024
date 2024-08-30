@@ -74,3 +74,13 @@ body {
   background-color: rgb(240, 240, 240);
   color: black;
 }
+
+.mask-gradient {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.7) 5%,
+    rgba(0, 0, 0, 0.7) 95%,
+    transparent
+  );
+}

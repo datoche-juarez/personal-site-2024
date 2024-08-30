@@ -14,34 +14,69 @@ import StrapiIcon from "../assets/icons/strapi-icon.svg";
 import GitIcon from "../assets/icons/git-icon.svg";
 
 const IconMarquee = () => {
-  console.log(HTMLIcon.src);
   return (
-    <div className="border border-teal">
-      <Marquee>
-        <img src={HTMLIcon.src} alt="HTML5 Logo" className="w-12 h-12" />
-        <img src={CSSIcon.src} alt="CSS3 Logo" className="w-12 h-12" />
+    <div className="relative overflow-hidden mask-gradient">
+      <Marquee speed={50} className="flex content-around">
+        <img
+          src={HTMLIcon.src}
+          alt="HTML5 Logo"
+          className="mr-8 md:mr-11 w-14 h-14"
+        />
+        <img
+          src={CSSIcon.src}
+          alt="CSS3 Logo"
+          className="mr-8 md:mr-11 w-14 h-14"
+        />
         <img
           src={JavaScriptIcon.src}
           alt="JavaScript Logo"
-          className="w-12 h-12"
+          className="mr-8 w-14 h-14 md:mr-11"
         />
         <img
           src={TypeScriptIcon.src}
           alt="TypeScript Logo"
-          className="w-12 h-12"
+          className="mr-8 w-14 h-14 md:mr-11"
         />
-        <img src={ReactIcon.src} alt="React Logo" className="w-12 h-12" />
-        <img src={NextJSIcon.src} alt="Next.js Logo" className="w-12 h-12" />
+        <img
+          src={ReactIcon.src}
+          alt="React Logo"
+          className="mr-8 w-14 h-14 md:mr-11"
+        />
+        <img
+          src={NextJSIcon.src}
+          alt="Next.js Logo"
+          className="mr-8 w-14 h-14 md:mr-11"
+        />
         <img
           src={TailwindIcon.src}
           alt="Tailwind CSS Logo"
-          className="w-12 h-12"
+          className="mr-8 w-14 h-14 md:mr-11"
         />
-        <img src={NodeJSIcon.src} alt="Node.js Logo" className="w-12 h-12" />
-        <img src={MySQLIcon.src} alt="MySQL Logo" className="w-12 h-12" />
-        <img src={AWSIcon.src} alt="AWS Logo" className="w-12 h-12" />
-        <img src={StrapiIcon.src} alt="AWS Logo" className="w-12 h-12" />
-        <img src={GitIcon.src} alt="Git Logo" className="w-12 h-12" />
+        <img
+          src={NodeJSIcon.src}
+          alt="Node.js Logo"
+          className="mr-8 w-14 h-14 md:mr-11"
+        />
+        <img
+          src={MySQLIcon.src}
+          alt="MySQL Logo"
+          className="mr-8 w-14 h-14 md:mr-11"
+        />
+        <img
+          src={AWSIcon.src}
+          alt="AWS Logo"
+          className="mr-8 w-14 h-14 md:mr-11"
+        />
+        <img
+          src={StrapiIcon.src}
+          alt="Strapi Logo"
+          className="mr-8 w-14 h-14 md:mr-11"
+        />
+        <img
+          src={GitIcon.src}
+          alt="Git Logo"
+          className="mr-8 w-14 h-14 md:mr-11"
+        />
       </Marquee>
     </div>
   );
