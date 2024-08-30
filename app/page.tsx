@@ -4,11 +4,32 @@ export default function Home() {
   return (
     <main>
       <Section id="about">
-        <h2 className="font-bold text-h1">About Me</h2>
-        <p className="mt-8 md:mt-10">
-          I'm a web developer with over three years of experience in both
-          frontend and backend development...
-        </p>
+        <div className="flex flex-col-reverse gap-6 border sm:gap-4 border-yellow sm:flex-row">
+          <div className="w-full border border-red sm:w-1/2">
+            <h2 className="font-bold text-h1">About Me</h2>
+            <p className="mt-8 leading-6 md:mt-10 sm:leading-5 md:leading-6">
+              My journey into web development began after a career change,
+              leading me to earn a degree in Computer Information Systems. Since
+              then, I've worked on a variety of projects, developing a diverse
+              skill set that includes everything from frontend design to backend
+              architecture. My passion for technology drives me to continuously
+              learn and grow, ensuring that I stay at the forefront of the
+              industry.
+            </p>
+            <p className="mt-4 leading-6 sm:leading-5 md:leading-6">
+              With years of experience in web development, I've honed my skills
+              in modern technologies like Next.js, Tailwind CSS, and TypeScript.
+              My work is characterized by a keen attention to detail, a strong
+              understanding of user experience, and a commitment to delivering
+              high-quality, maintainable code. Whether I'm building a complex
+              web application or a simple landing page, I approach each project
+              with the same level of dedication and professionalism.
+            </p>
+          </div>
+          <div className="w-full border border-blue h-[456px] sm:h-auto bg-gray-400 sm:w-1/2">
+            This is where the image will go
+          </div>
+        </div>
       </Section>
       <Section id="skills">
         <h2 className="font-bold text-h1">My Skills</h2>
