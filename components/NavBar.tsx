@@ -45,16 +45,26 @@ const NavBar = () => {
 
           {/* Hamburger Icon */}
           <div className="md:hidden" onClick={toggleMenu}>
-            <FaBars className="text-2xl text-white" />
+            <FaBars className="text-2xl text-white hover:fill-teal-light" />
           </div>
 
           {/* Desktop Nav Links */}
           <div className="hidden gap-4 md:flex">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" className="hover:text-teal-light">
+              About
+            </a>
+            <a href="#skills" className="hover:text-teal-light">
+              Skills
+            </a>
+            <a href="#portfolio" className="hover:text-teal-light">
+              Portfolio
+            </a>
+            <a href="#resume" className="hover:text-teal-light">
+              Resume
+            </a>
+            <a href="#contact" className="hover:text-teal-light">
+              Contact
+            </a>
           </div>
         </nav>
       )}
@@ -108,25 +118,45 @@ const NavBar = () => {
 
             {/* Close Icon */}
             <div onClick={toggleMenu}>
-              <FaTimes className="text-2xl text-white" />
+              <FaTimes className="text-2xl text-white hover:fill-teal-light" />
             </div>
           </div>
 
           {/* Mobile Nav Links */}
           <div className="flex flex-col items-center w-full gap-4 mt-4 xs:flex-row xs:justify-center">
-            <a href="#about" onClick={toggleMenu}>
+            <a
+              href="#about"
+              className="hover:text-teal-light"
+              onClick={toggleMenu}
+            >
               About
             </a>
-            <a href="#skills" onClick={toggleMenu}>
+            <a
+              href="#skills"
+              className="hover:text-teal-light"
+              onClick={toggleMenu}
+            >
               Skills
             </a>
-            <a href="#portfolio" onClick={toggleMenu}>
+            <a
+              href="#portfolio"
+              className="hover:text-teal-light"
+              onClick={toggleMenu}
+            >
               Portfolio
             </a>
-            <a href="#resume" onClick={toggleMenu}>
+            <a
+              href="#resume"
+              className="hover:text-teal-light"
+              onClick={toggleMenu}
+            >
               Resume
             </a>
-            <a href="#contact" onClick={toggleMenu}>
+            <a
+              href="#contact"
+              className="hover:text-teal-light"
+              onClick={toggleMenu}
+            >
               Contact
             </a>
           </div>
