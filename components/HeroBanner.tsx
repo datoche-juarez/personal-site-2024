@@ -18,7 +18,7 @@ const HeroBanner = () => {
         </div>
 
         {/* Headline, Introduction, and CTA */}
-        <div className="mx-auto my-20 xl:my-28 text-center md:text-left w-full px-4 text-white lg:px-[121px] xl:px-[121px] xl:max-w-screen-xl xl:mx-auto 2xl:px-0 2xl:max-w-screen-xl">
+        <div className="mx-auto my-20 xl:my-28 text-left  w-full px-4 text-white lg:px-[121px] xl:px-[121px] xl:max-w-screen-xl xl:mx-auto 2xl:px-0 2xl:max-w-screen-xl">
           <div className="w-full md:w-3/4 xl:w-1/2">
             <h1 className="text-5xl font-bold leading-tight md:text-6xl">
               Building the Future, One Line of Code at a Time
@@ -31,14 +31,14 @@ const HeroBanner = () => {
               elevate your next project.
             </p>
 
-            <div className="flex flex-col justify-center gap-2 mt-6 xs:flex-row xs:gap-0 md:justify-start xs:space-x-2 md:space-x-4">
+            <div className="flex flex-col justify-center gap-2 mt-6 xs:flex-row xs:gap-0 xs:justify-start xs:space-x-2 md:space-x-4">
               <a href="#portfolio">
-                <button className="w-full py-2 text-black bg-white rounded xs:w-[200px] hover:bg-black hover:text-white">
+                <button className="w-full py-2 text-black bg-white rounded xs:w-[200px] hover:bg-black hover:text-white border border-white">
                   View My Portfolio
                 </button>
               </a>
               <a href="#resume">
-                <button className="w-full py-[7px] text-white border border-white rounded xs:w-[200px] hover:bg-[black]">
+                <button className="w-full py-2 text-white border border-white rounded xs:w-[200px] hover:bg-[black]">
                   Download My Resume
                 </button>
               </a>
