@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <main>
       <Section id="about">
-        <div className="flex flex-col-reverse gap-6 border sm:gap-4 border-yellow sm:flex-row">
-          <div className="w-full border border-red sm:w-1/2">
+        <div className="flex flex-col-reverse gap-6 sm:gap-4 sm:flex-row">
+          <div className="w-full sm:w-1/2">
             <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
               About Me
             </h2>
@@ -28,8 +28,17 @@ export default function Home() {
               with the same level of dedication and professionalism.
             </p>
           </div>
-          <div className="w-full border border-blue h-[456px] sm:h-auto bg-gray-400 sm:w-1/2">
-            This is where the image will go
+          <div
+            className="flex items-center justify-center w-full sm:w-1/2"
+            style={{ maxHeight: "100%" }}
+          >
+            <div className="flex items-center justify-center w-full h-full sm:h-auto sm:w-auto">
+              <img
+                src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                className="object-cover w-full h-full max-h-[420px]"
+                alt="About me placeholder"
+              />
+            </div>
           </div>
         </div>
       </Section>
