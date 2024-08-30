@@ -31,12 +31,16 @@ const HeroBanner = () => {
             </p>
 
             <div className="flex flex-col justify-center gap-2 mt-6 xs:flex-row xs:gap-0 md:justify-start xs:space-x-2 md:space-x-4">
-              <button className="w-full px-6 py-2 text-black bg-white rounded xs:w-auto hover:bg-gray-200">
-                View My Portfolio
-              </button>
-              <button className="w-full px-6 py-2 text-white border border-white rounded xs:w-auto hover:bg-gray-800">
-                Download My Resume
-              </button>
+              <a href="#portfolio">
+                <button className="w-full py-2 text-black bg-white rounded xs:w-[200px] hover:bg-black hover:text-white">
+                  View My Portfolio
+                </button>
+              </a>
+              <a href="#resume">
+                <button className="w-full py-[7px] text-white border border-white rounded xs:w-[200px] hover:bg-[black]">
+                  Download My Resume
+                </button>
+              </a>
             </div>
           </div>
         </div>
