@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import HeroBanner from "@/components/HeroBanner"; // Import the HeroBanner component
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Daniel Atoche-Juarez",
@@ -25,9 +26,7 @@ export default function RootLayout({
       <body className={roboto.className}>
         <HeroBanner /> {/* Include the HeroBanner component */}
         <main>{children}</main>
-        <footer className="bg-gray-800 text-white text-center p-4">
-          &copy; {new Date().getFullYear()} Daniel Atoche-Juarez
-        </footer>
+        <Footer />
       </body>
     </html>
   );
