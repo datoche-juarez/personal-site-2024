@@ -1,5 +1,5 @@
 import NavBar from "@/components/NavBar";
-import HeroBannerImage from "@/assets/hero-placeholder.jpg";
+import HeroBannerImage from "@/assets/images/hero-placeholder.jpg";
 
 const HeroBanner = () => {
   return (
