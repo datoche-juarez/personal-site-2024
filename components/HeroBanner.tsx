@@ -38,7 +38,7 @@ const HeroBanner = () => {
                 </button>
               </a>
               <a href="#resume">
-                <button className="w-full py-2 text-white border border-white rounded xs:w-[200px] hover:bg-[black]">
+                <button className="w-full py-2 text-white border border-white rounded xs:w-[200px] hover:bg-[#545454]">
                   Download My Resume
                 </button>
               </a>
