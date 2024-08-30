@@ -1,14 +1,16 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-// import Logo from "@/assets/icons/logo.svg"; // Update the path based on where your logo is located
 
 const Footer = () => {
   return (
-    <footer className="text-white bg-black ">
+    <footer className="text-white bg-black">
       <div className="flex flex-col xs:flex-row items-center justify-between px-4 mx-auto border border-red sm:px-4 lg:px-[121px] xl:max-w-screen-xl xl:px-[121px] xl:mx-auto 2xl:px-0 2xl:max-w-screen-xl py-28">
         {/* Logo */}
         <div className="flex justify-center w-1/4 mb-6 border xs:mb-0 border-yellow xs:justify-start">
-          <div className="flex flex-col justify-center border border-red w-14 h-14">
+          <a
+            href="#"
+            className="flex flex-col justify-center border border-red w-14 h-14"
+          >
             <svg
               id="Layer_2"
               data-name="Layer 2"
@@ -23,20 +25,35 @@ const Footer = () => {
                 />
               </g>
             </svg>
-          </div>
+          </a>
         </div>
 
         {/* Social Media and Copyright */}
         <div className="flex flex-col items-center w-3/4 border xs:items-end border-blue">
           {/* Social Media Icons */}
           <div className="flex mb-6 space-x-6 border border-red">
-            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.facebook.com/daniel.atochejuarez"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-teal"
+            >
               <FaFacebook size={24} />
             </a>
-            <a href="https://github.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/datoche-juarez"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-teal"
+            >
               <FaGithub size={24} />
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/daniel-atoche-juarez-7272a3233/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-teal"
+            >
               <FaLinkedin size={24} />
             </a>
           </div>
