@@ -1,10 +1,11 @@
 import NavBar from "@/components/NavBar";
+import HeroBannerImage from "@/assets/hero-placeholder.jpg";
 
 const HeroBanner = () => {
   return (
     <header
       className="relative w-full mb-10 bg-center bg-no-repeat bg-cover md:mb-14"
-      style={{ backgroundImage: "url('/path-to-your-background-image.jpg')" }} // Placeholder path
+      style={{ backgroundImage: `url(${HeroBannerImage.src})` }} // Placeholder path
     >
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
