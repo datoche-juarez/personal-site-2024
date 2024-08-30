@@ -6,7 +6,9 @@ export default function Home() {
       <Section id="about">
         <div className="flex flex-col-reverse gap-6 border sm:gap-4 border-yellow sm:flex-row">
           <div className="w-full border border-red sm:w-1/2">
-            <h2 className="font-bold text-h1">About Me</h2>
+            <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
+              About Me
+            </h2>
             <p className="mt-8 leading-6 md:mt-10 sm:leading-5 md:leading-6">
               My journey into web development began after a career change,
               leading me to earn a degree in Computer Information Systems. Since
@@ -32,11 +34,15 @@ export default function Home() {
         </div>
       </Section>
       <Section id="skills">
-        <h2 className="font-bold text-h1">My Skills</h2>
+        <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
+          My Skills
+        </h2>
         <p className="mt-8 md:mt-10">Add skills list here..</p>
       </Section>
       <Section id="portfolio">
-        <h2 className="font-bold text-h1">Portfolio</h2>
+        <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
+          Portfolio
+        </h2>
         <div className="grid grid-cols-1 gap-4 mt-8 md:mt-10 md:grid-cols-2 lg:grid-cols-3">
           <div className="p-4 border">Project 1</div>
           <div className="p-4 border">Project 2</div>
@@ -44,7 +50,9 @@ export default function Home() {
         </div>
       </Section>
       <Section id="resume">
-        <h2 className="font-bold text-h1">Resume</h2>
+        <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
+          Resume
+        </h2>
         <ul className="mt-8 md:mt-10">
           <li className="mb-4">
             <strong>Job Title</strong> at Company - Duration
@@ -53,7 +61,9 @@ export default function Home() {
         </ul>
       </Section>
       <Section id="contact">
-        <h2 className="font-bold text-h1">Contact</h2>
+        <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
+          Contact
+        </h2>
         <form className="mt-8 md:mt-10">
           <div className="mb-4">
             <label className="block text-gray-700">Name</label>
