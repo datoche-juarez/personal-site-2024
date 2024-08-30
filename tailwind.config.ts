@@ -101,38 +101,43 @@ module.exports = {
       },
       fontSize: {
         h1: [
-        // 40px
+          // 40px
           "2.5rem",
           {
             lineHeight: "3.125rem",
             fontWeight: "500",
           },
         ],
-        h2: [
-          "3.5rem",
-          {
-            lineHeight: "4.2rem",
-            fontWeight: "500",
-          },
-        ],
+        h2:
+          // 32px
+          [
+            "2rem",
+            {
+              lineHeight: "2.5rem",
+              fontWeight: "500",
+            },
+          ],
         h3: [
-          "2.75rem",
+          // 24px
+          "1.5rem",
           {
-            lineHeight: "3.4375rem",
+            lineHeight: "2.125rem",
             fontWeight: "500",
           },
         ],
         h4: [
-          "2.125rem",
+          // 20px
+          "1.25rem",
           {
-            lineHeight: "2.7625rem",
+            lineHeight: "1.875rem",
             fontWeight: "500",
           },
         ],
         h5: [
-          "1.5rem",
+          // 18px
+          "1.125rem",
           {
-            lineHeight: "2.1rem",
+            lineHeight: "1.75rem",
             fontWeight: "500",
           },
         ],

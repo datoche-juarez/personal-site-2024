@@ -50,7 +50,44 @@ export default function Home() {
         <div className="mt-8 md:mt-10">
           <IconMarquee />
         </div>
-        <p className="mt-8 md:mt-10">Add skills list here..</p>
+        <div className="flex flex-col gap-4 mt-8 md:mt-10 md:flex-row">
+          <div className="w-full md:w-1/2">
+            <div className="font-bold text-h3">Technical Skills</div>
+            <div className="mt-4">
+              <ul className="leading-8 list-disc list-inside ">
+                <li>
+                  <span className="font-bold">Languages:</span> JavaScript,
+                  TypeScript, CSS, HTML
+                </li>
+                <li>
+                  <span className="font-bold">Frameworks:</span> NextJS, React,
+                  Tailwind CSS
+                </li>
+                <li>
+                  <span className="font-bold">Tools:</span> Git, Figma, Strapi
+                </li>
+                <li>
+                  <span className="font-bold">Backend:</span> Node.js, Strapi,
+                  Supabase, AWS
+                </li>
+                <li>
+                  <span className="font-bold">Databases:</span> DynamoDB, MySQL,
+                  PostgreSQL, Microsoft SQL Server
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="w-full md:w-1/2">
+            <div className="font-bold text-h3">Soft Skills</div>
+            <div className="mt-4 leading-6">
+              Beyond technical proficiency, I bring strong problem-solving
+              abilities, effective communication, and a collaborative mindset to
+              every project. I believe that clear communication and teamwork are
+              essential to the success of any project, and I strive to foster a
+              positive, productive working environment.
+            </div>
+          </div>
+        </div>
       </Section>
       <Section id="portfolio">
         <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
