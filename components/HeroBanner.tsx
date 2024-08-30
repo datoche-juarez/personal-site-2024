@@ -3,7 +3,7 @@ import NavBar from "@/components/NavBar";
 const HeroBanner = () => {
   return (
     <header
-      className="relative w-full bg-center bg-no-repeat bg-cover"
+      className="relative w-full mb-10 bg-center bg-no-repeat bg-cover md:mb-14"
       style={{ backgroundImage: "url('/path-to-your-background-image.jpg')" }} // Placeholder path
     >
       {/* Dark Overlay */}
@@ -12,7 +12,7 @@ const HeroBanner = () => {
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-between h-full border border-red">
         {/* Logo and NavBar */}
-        <div className=" w-full mt-12 px-4 lg:px-[121px] xl:px-[0px] xl:max-w-screen-xl xl:mx-auto border border-yellow flex justify-between items-center">
+        <div className="w-full mt-12 px-4 lg:px-[121px] xl:px-[121px] xl:max-w-screen-xl xl:mx-auto 2xl:px-0 2xl:max-w-screen-xl border border-yellow flex justify-between items-center">
           {/* Logo Placeholder */}
           <div className="w-1/2 border border-pink">
             <div className="bg-gray-300 w-14 h-14"></div>
@@ -25,7 +25,7 @@ const HeroBanner = () => {
         </div>
 
         {/* Headline, Introduction, and CTA */}
-        <div className="mx-auto my-20 xl:my-28 text-center md:text-left w-full px-4 border border-teal text-white lg:px-[121px] xl:px-[0px] xl:max-w-screen-xl xl:mx-auto ">
+        <div className="mx-auto my-20 xl:my-28 text-center md:text-left w-full px-4 border border-teal text-white lg:px-[121px] xl:px-[121px] xl:max-w-screen-xl xl:mx-auto 2xl:px-0 2xl:max-w-screen-xl">
           <div className="w-full border border-yellow md:w-3/4 xl:w-1/2">
             <h1 className="text-5xl font-bold leading-tight border border-red md:text-6xl">
               Building the Future, One Line of Code at a Time

@@ -10,12 +10,16 @@ export default function Home() {
           frontend and backend development...
         </p>
       </Section>
+      <Section id="skills">
+        <h2 className="text-3xl font-bold">My Skills</h2>
+        <p className="mt-4">Add skills list here..</p>
+      </Section>
       <Section id="portfolio">
         <h2 className="text-3xl font-bold">Portfolio</h2>
-        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="border p-4">Project 1</div>
-          <div className="border p-4">Project 2</div>
-          <div className="border p-4">Project 3</div>
+        <div className="grid grid-cols-1 gap-4 mt-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="p-4 border">Project 1</div>
+          <div className="p-4 border">Project 2</div>
+          <div className="p-4 border">Project 3</div>
         </div>
       </Section>
       <Section id="resume">
@@ -50,7 +54,7 @@ export default function Home() {
           </div>
           <button
             type="submit"
-            className="bg-blue-500 text-white py-2 px-4 rounded"
+            className="px-4 py-2 text-white bg-blue-500 rounded"
           >
             Submit
           </button>
