@@ -153,6 +153,7 @@ export default function Home() {
             <Image
               src={PeakerImage}
               alt="Peaker Services, inc. project screenshot"
+              className="object-cover w-full h-full"
             />
           </div>
         </div>
@@ -202,7 +203,11 @@ export default function Home() {
             </div>
           </div>
           <div className="border border-blue w-full md:w-1/2">
-            <Image src={PingImage} alt="Ping Software USA project screenshot" />
+            <Image
+              src={PingImage}
+              alt="Ping Software USA project screenshot"
+              className="object-cover w-full h-full"
+            />
           </div>
         </div>
         <div className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row">
@@ -254,6 +259,7 @@ export default function Home() {
             <Image
               src={MarketocracyImage}
               alt="Marketocracy.io project screenshot"
+              className="object-cover w-full h-full"
             />
           </div>
         </div>
@@ -303,7 +309,11 @@ export default function Home() {
             </div>
           </div>
           <div className="border border-blue w-full md:w-1/2">
-            <Image src={NineOneOneImage} alt="911 Ready project screenshot" />
+            <Image
+              src={NineOneOneImage}
+              alt="911 Ready project screenshot"
+              className="object-cover w-full h-full"
+            />
           </div>
         </div>
         <div className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row">
@@ -354,6 +364,7 @@ export default function Home() {
             <Image
               src={CordialShoppeImage}
               alt="Cordial Shoppe project screenshot"
+              className="object-cover w-full h-full"
             />
           </div>
         </div>
@@ -406,6 +417,7 @@ export default function Home() {
             <Image
               src={RAAImage}
               alt="Raffles and Auctions project screenshot"
+              className="object-cover w-full h-full"
             />
           </div>
         </div>
@@ -450,6 +462,7 @@ export default function Home() {
             <Image
               src={VinylShoppingListImage}
               alt="Vinyl Shopping List project screenshot"
+              className="object-cover w-full h-full"
             />
           </div>
         </div>
@@ -489,7 +502,11 @@ export default function Home() {
             </div>
           </div>
           <div className="border border-blue w-full md:w-1/2">
-            <Image src={DansBBQImage} alt="Dan's BBQ project screenshot" />
+            <Image
+              src={DansBBQImage}
+              alt="Dan's BBQ project screenshot"
+              className="object-cover w-full h-full"
+            />
           </div>
         </div>
         <div className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row">
@@ -530,7 +547,11 @@ export default function Home() {
             </div>
           </div>
           <div className="border border-blue w-full md:w-1/2">
-            <Image src={AlieNFTImage} alt="AlieNFT's project screenshot" />
+            <Image
+              src={AlieNFTImage}
+              alt="AlieNFT's project screenshot"
+              className="object-cover w-full h-full"
+            />
           </div>
         </div>
       </Section>
