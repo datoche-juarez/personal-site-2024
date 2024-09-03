@@ -33,7 +33,7 @@ const HeroBanner = () => {
 
             <div className="flex flex-col justify-center gap-2 mt-6 xs:flex-row xs:gap-0 xs:justify-start xs:space-x-2 md:space-x-4">
               <a href="#portfolio">
-                <button className="w-full py-2 text-black bg-white rounded xs:w-[200px] hover:bg-black hover:text-white border border-white">
+                <button className="w-full py-2 text-black bg-white rounded xs:w-[200px] hover:bg-teal hover:text-white border border-white">
                   View My Portfolio
                 </button>
               </a>
