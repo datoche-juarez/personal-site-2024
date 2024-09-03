@@ -2,6 +2,16 @@ import Section from "@/components/Section";
 import IconMarquee from "@/components/IconMarquee";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
+import Image from "next/image";
+import PeakerImage from "@/assets/images/projects/1440px/peaker-services-inc.png";
+import PingImage from "@/assets/images/projects/1440px/ping-software-usa.png";
+import MarketocracyImage from "@/assets/images/projects/1440px/marketocracy-io-tile.png";
+import NineOneOneImage from "@/assets/images/projects/1440px/911-ready.png";
+import CordialShoppeImage from "@/assets/images/projects/1440px/cordial-shoppe.png";
+import RAAImage from "@/assets/images/projects/1440px/raffles-and-auctions.png";
+import VinylShoppingListImage from "@/assets/images/projects/1440px/vinyl-shopping-list.png";
+import DansBBQImage from "@/assets/images/projects/1440px/dans-bbq-tile.png";
+import AlieNFTImage from "@/assets/images/projects/1440px/alien-tiles.png";
 
 export default function Home() {
   return (
@@ -96,7 +106,7 @@ export default function Home() {
           My Portfolio
         </h2>
         <div className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row">
-          <div className="border border-blue w-full sm:w-1/2">
+          <div className="border border-blue w-full md:w-1/2">
             <div className="text-2xl font-bold border border-red">
               Peaker Services, inc.
             </div>
@@ -139,12 +149,15 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="border border-blue w-full sm:w-1/2">
-            Image section goes here
+          <div className="border border-blue w-full md:w-1/2">
+            <Image
+              src={PeakerImage}
+              alt="Peaker Services, inc. project screenshot"
+            />
           </div>
         </div>
         <div className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row">
-          <div className="border border-blue w-full sm:w-1/2">
+          <div className="border border-blue w-full md:w-1/2">
             <div className="text-2xl font-bold border border-red">
               Ping Software USA
             </div>
@@ -188,12 +201,12 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="border border-blue w-full sm:w-1/2">
-            Image section goes here
+          <div className="border border-blue w-full md:w-1/2">
+            <Image src={PingImage} alt="Ping Software USA project screenshot" />
           </div>
         </div>
         <div className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row">
-          <div className="border border-blue w-full sm:w-1/2">
+          <div className="border border-blue w-full md:w-1/2">
             <div className="text-2xl font-bold border border-red">
               Marketocracy.io
             </div>
@@ -237,12 +250,15 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="border border-blue w-full sm:w-1/2">
-            Image section goes here
+          <div className="border border-blue w-full md:w-1/2">
+            <Image
+              src={MarketocracyImage}
+              alt="Marketocracy.io project screenshot"
+            />
           </div>
         </div>
         <div className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row">
-          <div className="border border-blue w-full sm:w-1/2">
+          <div className="border border-blue w-full md:w-1/2">
             <div className="text-2xl font-bold border border-red">
               911 Ready
             </div>
@@ -286,12 +302,12 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="border border-blue w-full sm:w-1/2">
-            Image section goes here
+          <div className="border border-blue w-full md:w-1/2">
+            <Image src={NineOneOneImage} alt="911 Ready project screenshot" />
           </div>
         </div>
         <div className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row">
-          <div className="border border-blue w-full sm:w-1/2">
+          <div className="border border-blue w-full md:w-1/2">
             <div className="text-2xl font-bold border border-red">
               Cordial Shoppe
             </div>
@@ -334,12 +350,15 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="border border-blue w-full sm:w-1/2">
-            Image section goes here
+          <div className="border border-blue w-full md:w-1/2">
+            <Image
+              src={CordialShoppeImage}
+              alt="Cordial Shoppe project screenshot"
+            />
           </div>
         </div>
         <div className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row">
-          <div className="border border-blue w-full sm:w-1/2">
+          <div className="border border-blue w-full md:w-1/2">
             <div className="text-2xl font-bold border border-red">
               Raffles and Auctions
             </div>
@@ -383,12 +402,15 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="border border-blue w-full sm:w-1/2">
-            Image section goes here
+          <div className="border border-blue w-full md:w-1/2">
+            <Image
+              src={RAAImage}
+              alt="Raffles and Auctions project screenshot"
+            />
           </div>
         </div>
         <div className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row">
-          <div className="border border-blue w-full sm:w-1/2">
+          <div className="border border-blue w-full md:w-1/2">
             <div className="text-2xl font-bold border border-red">
               Vinyl Shopping List
             </div>
@@ -424,12 +446,15 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="border border-blue w-full sm:w-1/2">
-            Image section goes here
+          <div className="border border-blue w-full md:w-1/2">
+            <Image
+              src={VinylShoppingListImage}
+              alt="Vinyl Shopping List project screenshot"
+            />
           </div>
         </div>
         <div className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row">
-          <div className="border border-blue w-full sm:w-1/2">
+          <div className="border border-blue w-full md:w-1/2">
             <div className="text-2xl font-bold border border-red">
               Dan's BBQ
             </div>
@@ -463,12 +488,12 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="border border-blue w-full sm:w-1/2">
-            Image section goes here
+          <div className="border border-blue w-full md:w-1/2">
+            <Image src={DansBBQImage} alt="Dan's BBQ project screenshot" />
           </div>
         </div>
         <div className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row">
-          <div className="border border-blue w-full sm:w-1/2">
+          <div className="border border-blue w-full md:w-1/2">
             <div className="text-2xl font-bold border border-red">
               AlieNFT's
             </div>
@@ -504,8 +529,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="border border-blue w-full sm:w-1/2">
-            Image section goes here
+          <div className="border border-blue w-full md:w-1/2">
+            <Image src={AlieNFTImage} alt="AlieNFT's project screenshot" />
           </div>
         </div>
       </Section>
