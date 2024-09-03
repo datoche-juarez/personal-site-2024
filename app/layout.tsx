@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <HeroBanner /> {/* Include the HeroBanner component */}
+        <HeroBanner />
         <main>{children}</main>
         <Footer />
       </body>
