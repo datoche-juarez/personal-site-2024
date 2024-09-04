@@ -99,10 +99,8 @@ export default function Home() {
         </h2>
         <div className="flex flex-col gap-4 mt-8 md:mt-10 md:flex-row">
           <div className="w-full md:w-1/2">
-            <div className="font-bold text-h3 border border-blue">
-              Experience
-            </div>
-            <div className="mt-4 border border-red">
+            <div className="font-bold text-h3">Experience</div>
+            <div className="mt-4">
               <ul className="leading-6 list-disc list-outside pl-3.5">
                 <li className="pl-2">
                   <span className="font-bold">Peaker Services, inc.</span>{" "}
@@ -127,10 +125,8 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full md:w-1/2">
-            <div className="font-bold text-h3 border border-blue">
-              Education
-            </div>
-            <div className="border border-red leading-6 mt-4">
+            <div className="font-bold text-h3">Education</div>
+            <div className="leading-6 mt-4">
               <div className="">
                 <span className="font-bold">
                   Associate in Art: Liberal Arts
@@ -156,6 +152,13 @@ export default function Home() {
               </ul>
             </div>
           </div>
+        </div>
+        <div className="mt-12">
+          <button className="w-full xs:w-[200px] hover:bg-teal  py-2 bg-black text-white text-base rounded">
+            <a href="/DAJ_Resume.pdf" download>
+              Download My Resume
+            </a>
+          </button>
         </div>
       </Section>
       <Section id="contact">
