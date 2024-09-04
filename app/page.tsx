@@ -103,21 +103,21 @@ export default function Home() {
               Experience
             </div>
             <div className="mt-4 border border-red">
-              <ul className="leading-6 list-disc list-inside">
-                <li>
+              <ul className="leading-6 list-disc list-outside pl-3.5">
+                <li className="pl-2">
                   <span className="font-bold">Peaker Services, inc.</span>{" "}
                   (Contractor, September 2023 - June 2024): "Web Developer
                   responsible for redesigning and maintaining the company's
                   website, improving user experience, and optimizing the site
                   for SEO."
                 </li>
-                <li>
+                <li className="pl-2">
                   <span className="font-bold">Freelance Web Development</span>{" "}
                   (October 2023 - Present): "Independent projects involving web
                   development, consulting, and technology solutions for a
                   variety of clients.
                 </li>
-                <li>
+                <li className="pl-2">
                   <span className="font-bold">Ping Software USA</span> (January
                   2021 - October 2023): "Full-Stack Developer contributing to
                   the development of custom web applications and ensuring smooth
