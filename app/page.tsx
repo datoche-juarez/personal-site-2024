@@ -1,17 +1,18 @@
 import Section from "@/components/Section";
 import IconMarquee from "@/components/IconMarquee";
-import { FaGithub } from "react-icons/fa";
-import { HiOutlineExternalLink } from "react-icons/hi";
-import Image from "next/image";
-import PeakerImage from "@/assets/images/projects/1440px/peaker-services-inc.png";
-import PingImage from "@/assets/images/projects/1440px/ping-software-usa.png";
-import MarketocracyImage from "@/assets/images/projects/1440px/marketocracy-io-tile.png";
-import NineOneOneImage from "@/assets/images/projects/1440px/911-ready.png";
-import CordialShoppeImage from "@/assets/images/projects/1440px/cordial-shoppe.png";
-import RAAImage from "@/assets/images/projects/1440px/raffles-and-auctions.png";
-import VinylShoppingListImage from "@/assets/images/projects/1440px/vinyl-shopping-list.png";
-import DansBBQImage from "@/assets/images/projects/1440px/dans-bbq-tile.png";
-import AlieNFTImage from "@/assets/images/projects/1440px/alien-tiles.png";
+// import { FaGithub } from "react-icons/fa";
+// import { HiOutlineExternalLink } from "react-icons/hi";
+// import Image from "next/image";
+// import PeakerImage from "@/assets/images/peaker-services-inc.png";
+// import PingImage from "@/assets/images/ping-software-usa.png";
+// import MarketocracyImage from "@/assets/images/marketocracy-io-tile.png";
+// import NineOneOneImage from "@/assets/images/911-ready.png";
+// import CordialShoppeImage from "@/assets/images/cordial-shoppe.png";
+// import RAAImage from "@/assets/images/raffles-and-auctions.png";
+// import VinylShoppingListImage from "@/assets/images/vinyl-shopping-list.png";
+// import DansBBQImage from "@/assets/images/dans-bbq-tile.png";
+// import AlieNFTImage from "@/assets/images/alien-tiles.png";
+import PortfolioSection from "@/components/PortfolioSection"; // Import the new component
 
 export default function Home() {
   return (
@@ -101,7 +102,7 @@ export default function Home() {
           </div>
         </div>
       </Section>
-      <Section id="portfolio">
+      {/* <Section id="portfolio">
         <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
           My Portfolio
         </h2>
@@ -554,6 +555,9 @@ export default function Home() {
             />
           </div>
         </div>
+      </Section> */}
+      <Section>
+        <PortfolioSection /> {/* Use the new PortfolioSection component here */}
       </Section>
       <Section id="resume">
         <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
