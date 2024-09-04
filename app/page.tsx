@@ -170,27 +170,49 @@ export default function Home() {
           form below and I’ll get back to you as soon as possible.
         </div>
         <form className="mt-8 md:mt-10">
-          <div className="mb-4">
-            <label className="block text-gray-700">Name</label>
-            <input
-              type="text"
-              className="w-full p-2 border border-gray-300 rounded"
-            />
+          <div className="mb-4 border border-yellow flex flex-col md:flex-row gap-4">
+            <div className="w-full md:w-1/2 border border-red">
+              <label className="block text-black mb-2 font-medium">
+                First Name
+              </label>
+              <input
+                type="text"
+                className="w-full h-10 border border-[#767676] rounded"
+              />
+            </div>
+            <div className="w-full md:w-1/2 border border-teal">
+              <label className="block text-black mb-2 font-medium">
+                Last Name
+              </label>
+              <input
+                type="text"
+                className="w-full h-10 border border-[#767676] rounded"
+              />
+            </div>
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700">Email</label>
-            <input
-              type="email"
-              className="w-full p-2 border border-gray-300 rounded"
-            />
+          <div className="mb-4 border border-yellow flex flex-col md:flex-row gap-4">
+            <div className="w-full md:w-1/2 border border-red">
+              <label className="block text-black mb-2 font-medium">Email</label>
+              <input
+                type="text"
+                className="w-full h-10 border border-[#767676] rounded"
+              />
+            </div>
+            <div className="w-full md:w-1/2 border border-teal">
+              <label className="block text-black mb-2 font-medium">Phone</label>
+              <input
+                type="text"
+                className="w-full h-10 border border-[#767676] rounded"
+              />
+            </div>
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700">Message</label>
-            <textarea className="w-full p-2 border border-gray-300 rounded"></textarea>
+          <div className="mb-4 border border-yellow">
+            <label className="block text-black mb-2 font-medium">Message</label>
+            <textarea className="w-full h-52 border border-[#767676] rounded"></textarea>
           </div>
           <button
             type="submit"
-            className="px-4 py-2 text-white bg-blue-500 rounded"
+            className="w-full xs:w-[200px] hover:bg-teal  py-2 bg-black text-white text-base rounded"
           >
             Submit
           </button>
