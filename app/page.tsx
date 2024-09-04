@@ -91,18 +91,72 @@ export default function Home() {
         </div>
       </Section>
       <Section id="portfolio">
-        <PortfolioSection /> {/* Use the new PortfolioSection component here */}
+        <PortfolioSection />
       </Section>
       <Section id="resume">
         <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
-          Resume
+          My Resume
         </h2>
-        <ul className="mt-8 md:mt-10">
-          <li className="mb-4">
-            <strong>Job Title</strong> at Company - Duration
-            <p>Brief description of your role and accomplishments.</p>
-          </li>
-        </ul>
+        <div className="flex flex-col gap-4 mt-8 md:mt-10 md:flex-row">
+          <div className="w-full md:w-1/2">
+            <div className="font-bold text-h3 border border-blue">
+              Experience
+            </div>
+            <div className="mt-4 border border-red">
+              <ul className="leading-6 list-disc list-inside">
+                <li>
+                  <span className="font-bold">Peaker Services, inc.</span>{" "}
+                  (Contractor, September 2023 - June 2024): "Web Developer
+                  responsible for redesigning and maintaining the company's
+                  website, improving user experience, and optimizing the site
+                  for SEO."
+                </li>
+                <li>
+                  <span className="font-bold">Freelance Web Development</span>{" "}
+                  (October 2023 - Present): "Independent projects involving web
+                  development, consulting, and technology solutions for a
+                  variety of clients.
+                </li>
+                <li>
+                  <span className="font-bold">Ping Software USA</span> (January
+                  2021 - October 2023): "Full-Stack Developer contributing to
+                  the development of custom web applications and ensuring smooth
+                  project delivery.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="w-full md:w-1/2">
+            <div className="font-bold text-h3 border border-blue">
+              Education
+            </div>
+            <div className="border border-red leading-6 mt-4">
+              <div className="">
+                <span className="font-bold">
+                  Associate in Art: Liberal Arts
+                </span>{" "}
+                (May 2021 - December 2022)
+              </div>
+              <div className="font-bold">Honors and Awards</div>
+              <ul className="list-disc list-inside">
+                <li>Dean’s List for each semester</li>
+                <li className="">Graduated Summa Cum Laude</li>
+              </ul>
+              <div className="">
+                <span className="font-bold">
+                  Associate in Applied Science: Computer Information Systems
+                </span>{" "}
+                (August 2017 - May 2021)
+              </div>
+              <div className="font-bold">Honors and Awards</div>
+              <ul className="list-disc list-inside">
+                <li>HFC Honors Program graduate</li>
+                <li>Dean’s List for each semester</li>
+                <li className="">Graduated Summa Cum Laude</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </Section>
       <Section id="contact">
         <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
