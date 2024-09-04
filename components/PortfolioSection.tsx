@@ -197,7 +197,7 @@ const PortfolioSection = () => {
                 href="https://github.com/datoche-juarez"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-gray-400"
+                className="hover:text-teal"
               >
                 <FaGithub size={24} />
               </a>
@@ -205,7 +205,7 @@ const PortfolioSection = () => {
                 href={project.link}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-gray-400"
+                className="hover:text-teal"
               >
                 <HiOutlineExternalLink size={24} />
               </a>
