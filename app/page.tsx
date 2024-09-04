@@ -165,6 +165,10 @@ export default function Home() {
         <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
           Contact
         </h2>
+        <div className="text-lg mt-8 md:mt-10">
+          Have a question or want to discuss a potential project? Fill out the
+          form below and I’ll get back to you as soon as possible.
+        </div>
         <form className="mt-8 md:mt-10">
           <div className="mb-4">
             <label className="block text-gray-700">Name</label>
@@ -191,6 +195,37 @@ export default function Home() {
             Submit
           </button>
         </form>
+        <div className="text-lg mt-8 md:mt-10">
+          Prefer to reach out directly? You can contact me via email at{" "}
+          <a
+            href="mailto:dtoch123@gmail.com"
+            className="text-purple-600 hover:underline"
+          >
+            dtoch123@gmail.com{" "}
+          </a>
+          or connect with me on{" "}
+          <a
+            href="https://www.linkedin.com/in/daniel-atoche-juarez-7272a3233/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-purple-600 hover:underline"
+          >
+            LinkedIn
+          </a>
+          .
+        </div>
+        <div className="mt-6 text-lg">
+          Check out my{" "}
+          <a
+            href="https://github.com/datoche-juarez"
+            target="_blank"
+            rel="noreferrer"
+            className="text-purple-600 hover:underline"
+          >
+            GitHub
+          </a>{" "}
+          for more projects and examples of my work.
+        </div>
       </Section>
     </main>
   );
