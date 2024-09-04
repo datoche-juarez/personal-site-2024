@@ -176,25 +176,23 @@ const PortfolioSection = () => {
       {visibleProjects.map((project, index) => (
         <div
           key={project.title}
-          className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row border border-red"
+          className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row"
         >
-          <div className="w-full md:w-1/2 md:flex md:flex-col md:justify-between border border-blue">
+          <div className="w-full md:w-1/2 md:flex md:flex-col md:justify-between">
             <div>
-              <div className="text-2xl font-bold border border-red">
-                {project.title}
-              </div>
-              <div className="mt-4 border border-red">
+              <div className="text-2xl font-bold">{project.title}</div>
+              <div className="mt-4">
                 <span className="font-bold">Role:</span> {project.role}
               </div>
-              <div className="border border-red">
+              <div>
                 <span className="font-bold">Technologies Used:</span>{" "}
                 {project.technologies}
               </div>
-              <div className="border border-red">
+              <div>
                 <span className="font-bold">Outcome:</span> {project.outcome}
               </div>
             </div>
-            <div className="flex space-x-6 mt-4 border border-red">
+            <div className="flex space-x-6 mt-4">
               <a
                 href="https://github.com/datoche-juarez"
                 target="_blank"
@@ -213,7 +211,7 @@ const PortfolioSection = () => {
               </a>
             </div>
           </div>
-          <div className="w-full md:w-1/2 md:relative border border-blue">
+          <div className="w-full md:w-1/2 md:relative">
             <Image
               src={getImageSrc(project.title as any)}
               alt={`${project.title} project screenshot`}
