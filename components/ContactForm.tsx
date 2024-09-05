@@ -87,7 +87,7 @@ const ContactForm = () => {
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
-            className="w-full h-10 border border-[#767676] rounded"
+            className="w-full h-10 border border-[#767676] rounded p-2"
             required
           />
         </div>
@@ -98,7 +98,7 @@ const ContactForm = () => {
             name="lastName"
             value={formData.lastName}
             onChange={handleChange}
-            className="w-full h-10 border border-[#767676] rounded"
+            className="w-full h-10 border border-[#767676] rounded p-2"
             required
           />
         </div>
@@ -111,7 +111,7 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full h-10 border border-[#767676] rounded"
+            className="w-full h-10 border border-[#767676] rounded p-2"
             required
           />
         </div>
@@ -122,7 +122,7 @@ const ContactForm = () => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full h-10 border border-[#767676] rounded"
+            className="w-full h-10 border border-[#767676] rounded p-2"
             required
           />
         </div>
@@ -133,7 +133,7 @@ const ContactForm = () => {
           name="message"
           value={formData.message}
           onChange={handleChange}
-          className="w-full h-52 border border-[#767676] rounded"
+          className="w-full h-52 border border-[#767676] rounded p-2"
           required
         ></textarea>
       </div>
@@ -144,7 +144,6 @@ const ContactForm = () => {
         Submit
       </button>
 
-      {/* Show success or error message */}
       {status.success !== null && (
         <div
           className={`mt-4 p-2 rounded ${
