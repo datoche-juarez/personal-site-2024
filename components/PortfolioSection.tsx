@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image, { StaticImageData } from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
@@ -26,10 +26,18 @@ const PortfolioSection = () => {
   const isMdUp = useMediaQuery("only screen and (min-width: 768px)");
   const isXlUp = useMediaQuery("only screen and (min-width: 1280px)");
 
+  const [hydrated, setHydrated] = useState(false);
+
+  // Set `hydrated` to true once the client-side is loaded
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
+
   const [showMore, setShowMore] = useState(false);
 
   const getImageSrc = (imageKey: string): StaticImageData => {
-    if (isMdUp && !isXlUp) {
+    if (hydrated && isMdUp && !isXlUp) {
+      // Only switch the image on the client after hydration
       switch (imageKey) {
         case "Peaker":
           return PeakerImageSquare;
@@ -51,6 +59,7 @@ const PortfolioSection = () => {
           return RAAImage;
       }
     }
+    // Default to original images for the server and other cases
     switch (imageKey) {
       case "Peaker":
         return PeakerImage;
@@ -71,10 +80,6 @@ const PortfolioSection = () => {
       default:
         return RAAImage;
     }
-  };
-
-  const getImageLayout = (): "fill" | "responsive" => {
-    return isMdUp && !isXlUp ? "fill" : "responsive";
   };
 
   const projectList = [
@@ -222,7 +227,7 @@ const PortfolioSection = () => {
                 src={getImageSrc(project.imageKey)}
                 alt={`${project.title} project screenshot`}
                 className="object-cover"
-                fill={true}
+                fill={true} // Always use "fill" for full coverage
                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                 priority={project.title === "Peaker Services, inc."}
               />
