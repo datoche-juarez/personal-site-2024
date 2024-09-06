@@ -2,6 +2,7 @@ import Section from "@/components/Section";
 import IconMarquee from "@/components/IconMarquee";
 import PortfolioSection from "@/components/PortfolioSection";
 import ContactForm from "@/components/ContactForm";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,31 +16,35 @@ export default function Home() {
             <p className="mt-8 leading-6 md:mt-10 sm:leading-5 md:leading-6">
               My journey into web development began after a career change,
               leading me to earn a degree in Computer Information Systems. Since
-              then, I&#39;ve worked on a variety of projects, developing a diverse
-              skill set that includes everything from frontend design to backend
-              architecture. My passion for technology drives me to continuously
-              learn and grow, ensuring that I stay at the forefront of the
-              industry.
+              then, I&#39;ve worked on a variety of projects, developing a
+              diverse skill set that includes everything from frontend design to
+              backend architecture. My passion for technology drives me to
+              continuously learn and grow, ensuring that I stay at the forefront
+              of the industry.
             </p>
             <p className="mt-4 leading-6 sm:leading-5 md:leading-6">
-              With years of experience in web development, I&#39;ve honed my skills
-              in modern technologies like Next.js, Tailwind CSS, and TypeScript.
-              My work is characterized by a keen attention to detail, a strong
-              understanding of user experience, and a commitment to delivering
-              high-quality, maintainable code. Whether I&#39;m building a complex
-              web application or a simple landing page, I approach each project
-              with the same level of dedication and professionalism.
+              With years of experience in web development, I&#39;ve honed my
+              skills in modern technologies like Next.js, Tailwind CSS, and
+              TypeScript. My work is characterized by a keen attention to
+              detail, a strong understanding of user experience, and a
+              commitment to delivering high-quality, maintainable code. Whether
+              I&#39;m building a complex web application or a simple landing
+              page, I approach each project with the same level of dedication
+              and professionalism.
             </p>
           </div>
           <div
             className="flex items-center justify-center w-full sm:w-1/2"
             style={{ maxHeight: "100%" }}
           >
-            <div className="flex items-center justify-center w-full h-full sm:h-auto sm:w-auto">
-              <img
+            <div className="relative flex items-center justify-center w-full h-full sm:h-auto sm:w-auto">
+              <Image
                 src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                className="object-cover w-full h-full max-h-[420px]"
                 alt="About me placeholder"
+                width={3464}
+                height={2309}
+                className="object-cover w-full h-full max-h-[420px]"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>

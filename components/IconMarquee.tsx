@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import HTMLIcon from "../assets/icons/html-icon.svg";
 import CSSIcon from "../assets/icons/css-icon.svg";
@@ -14,69 +15,35 @@ import StrapiIcon from "../assets/icons/strapi-icon.svg";
 import GitIcon from "../assets/icons/git-icon.svg";
 
 const IconMarquee = () => {
+  const icons = [
+    { src: HTMLIcon, alt: "HTML5 Logo" },
+    { src: CSSIcon, alt: "CSS3 Logo" },
+    { src: JavaScriptIcon, alt: "JavaScript Logo" },
+    { src: TypeScriptIcon, alt: "TypeScript Logo" },
+    { src: ReactIcon, alt: "React Logo" },
+    { src: NextJSIcon, alt: "Next.js Logo" },
+    { src: TailwindIcon, alt: "Tailwind CSS Logo" },
+    { src: NodeJSIcon, alt: "Node.js Logo" },
+    { src: MySQLIcon, alt: "MySQL Logo" },
+    { src: AWSIcon, alt: "AWS Logo" },
+    { src: StrapiIcon, alt: "Strapi Logo" },
+    { src: GitIcon, alt: "Git Logo" },
+  ];
+
   return (
     <div className="relative overflow-hidden mask-gradient">
       <Marquee speed={50} className="flex content-around">
-        <img
-          src={HTMLIcon.src}
-          alt="HTML5 Logo"
-          className="mr-8 md:mr-11 w-14 h-14"
-        />
-        <img
-          src={CSSIcon.src}
-          alt="CSS3 Logo"
-          className="mr-8 md:mr-11 w-14 h-14"
-        />
-        <img
-          src={JavaScriptIcon.src}
-          alt="JavaScript Logo"
-          className="mr-8 w-14 h-14 md:mr-11"
-        />
-        <img
-          src={TypeScriptIcon.src}
-          alt="TypeScript Logo"
-          className="mr-8 w-14 h-14 md:mr-11"
-        />
-        <img
-          src={ReactIcon.src}
-          alt="React Logo"
-          className="mr-8 w-14 h-14 md:mr-11"
-        />
-        <img
-          src={NextJSIcon.src}
-          alt="Next.js Logo"
-          className="mr-8 w-14 h-14 md:mr-11"
-        />
-        <img
-          src={TailwindIcon.src}
-          alt="Tailwind CSS Logo"
-          className="mr-8 w-14 h-14 md:mr-11"
-        />
-        <img
-          src={NodeJSIcon.src}
-          alt="Node.js Logo"
-          className="mr-8 w-14 h-14 md:mr-11"
-        />
-        <img
-          src={MySQLIcon.src}
-          alt="MySQL Logo"
-          className="mr-8 w-14 h-14 md:mr-11"
-        />
-        <img
-          src={AWSIcon.src}
-          alt="AWS Logo"
-          className="mr-8 w-14 h-14 md:mr-11"
-        />
-        <img
-          src={StrapiIcon.src}
-          alt="Strapi Logo"
-          className="mr-8 w-14 h-14 md:mr-11"
-        />
-        <img
-          src={GitIcon.src}
-          alt="Git Logo"
-          className="mr-8 w-14 h-14 md:mr-11"
-        />
+        {icons.map((icon, index) => (
+          <div key={index} className="mr-8 md:mr-11 w-14 h-14">
+            <Image
+              src={icon.src}
+              alt={icon.alt}
+              width={56}
+              height={56}
+              className="w-full h-full"
+            />
+          </div>
+        ))}
       </Marquee>
     </div>
   );
