@@ -90,7 +90,7 @@ const PortfolioSection = () => {
 
   const projectList = [
     {
-      title: "Peaker",
+      title: "Peaker Services, inc.",
       role: "Web Developer",
       technologies: "NextJS, Tailwind CSS, Strapi CMS",
       outcome:
@@ -99,7 +99,7 @@ const PortfolioSection = () => {
       githubLink: "https://github.com/datoche-juarez",
     },
     {
-      title: "Ping",
+      title: "Ping Software USA",
       role: "Full-Stack Developer",
       technologies: "NextJS, TypeScript, Node.js, Chakra UI",
       outcome:
@@ -108,7 +108,7 @@ const PortfolioSection = () => {
       githubLink: "https://github.com/datoche-juarez",
     },
     {
-      title: "Marketocracy",
+      title: "Marketocracy.io",
       role: "Frontend Developer",
       technologies: "React, Chakra UI",
       outcome:
@@ -117,7 +117,7 @@ const PortfolioSection = () => {
       githubLink: "https://github.com/datoche-juarez",
     },
     {
-      title: "NineOneOne",
+      title: "911 Ready",
       role: "Full-Stack Developer",
       technologies: "React, Node.js, DynamoDB",
       outcome:
@@ -126,7 +126,7 @@ const PortfolioSection = () => {
       githubLink: "https://github.com/datoche-juarez",
     },
     {
-      title: "CordialShoppe",
+      title: "The Cordial Shoppe",
       role: "Full-Stack Developer",
       technologies: "React, Node.js, DynamoDB",
       outcome:
@@ -135,7 +135,7 @@ const PortfolioSection = () => {
       githubLink: "https://github.com/datoche-juarez",
     },
     {
-      title: "RAA",
+      title: "Raffles and Auctions",
       role: "Full-Stack Developer",
       technologies: "React, Node.js, DynamoDB",
       outcome:
@@ -144,7 +144,7 @@ const PortfolioSection = () => {
       githubLink: "https://github.com/datoche-juarez",
     },
     {
-      title: "VinylShoppingList",
+      title: "Vinyl Shopping List",
       role: "Frontend Developer",
       technologies: "NextJS, Chakra UI",
       outcome:
@@ -152,7 +152,7 @@ const PortfolioSection = () => {
       githubLink: "https://github.com/datoche-juarez/next-shopping-list",
     },
     {
-      title: "DansBBQ",
+      title: "Dan's BBQ",
       role: "Application Developer",
       technologies: "Java, JavaFX",
       outcome:

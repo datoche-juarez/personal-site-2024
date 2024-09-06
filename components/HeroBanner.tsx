@@ -24,7 +24,7 @@ const HeroBanner = () => {
               Building the Future, One Line of Code at a Time
             </h1>
             <p className="mt-6 text-lg md:text-xl">
-              I'm Dan, a passionate web developer specializing in both frontend
+              I&#39;m Dan, a passionate web developer specializing in both frontend
               and backend development. With a strong foundation in modern
               technologies and a commitment to quality, I bring your digital
               ideas to life. Explore my portfolio and see how my skills can help

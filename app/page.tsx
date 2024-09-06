@@ -15,18 +15,18 @@ export default function Home() {
             <p className="mt-8 leading-6 md:mt-10 sm:leading-5 md:leading-6">
               My journey into web development began after a career change,
               leading me to earn a degree in Computer Information Systems. Since
-              then, I've worked on a variety of projects, developing a diverse
+              then, I&#39;ve worked on a variety of projects, developing a diverse
               skill set that includes everything from frontend design to backend
               architecture. My passion for technology drives me to continuously
               learn and grow, ensuring that I stay at the forefront of the
               industry.
             </p>
             <p className="mt-4 leading-6 sm:leading-5 md:leading-6">
-              With years of experience in web development, I've honed my skills
+              With years of experience in web development, I&#39;ve honed my skills
               in modern technologies like Next.js, Tailwind CSS, and TypeScript.
               My work is characterized by a keen attention to detail, a strong
               understanding of user experience, and a commitment to delivering
-              high-quality, maintainable code. Whether I'm building a complex
+              high-quality, maintainable code. Whether I&#39;m building a complex
               web application or a simple landing page, I approach each project
               with the same level of dedication and professionalism.
             </p>
@@ -106,7 +106,7 @@ export default function Home() {
                 <li className="pl-2">
                   <span className="font-bold">Peaker Services, inc.</span>{" "}
                   (Contractor, September 2023 - June 2024): "Web Developer
-                  responsible for redesigning and maintaining the company's
+                  responsible for redesigning and maintaining the company&#39;s
                   website, improving user experience, and optimizing the site
                   for SEO."
                 </li>
