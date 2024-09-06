@@ -28,20 +28,9 @@ const PortfolioSection = () => {
 
   const [showMore, setShowMore] = useState(false);
 
-  const getImageSrc = (
-    project:
-      | "Peaker"
-      | "Ping"
-      | "Marketocracy"
-      | "NineOneOne"
-      | "CordialShoppe"
-      | "VinylShoppingList"
-      | "DansBBQ"
-      | "AlieNFT"
-      | "RAA"
-  ): StaticImageData => {
+  const getImageSrc = (imageKey: string): StaticImageData => {
     if (isMdUp && !isXlUp) {
-      switch (project) {
+      switch (imageKey) {
         case "Peaker":
           return PeakerImageSquare;
         case "Ping":
@@ -62,7 +51,7 @@ const PortfolioSection = () => {
           return RAAImage;
       }
     }
-    switch (project) {
+    switch (imageKey) {
       case "Peaker":
         return PeakerImage;
       case "Ping":
@@ -91,6 +80,7 @@ const PortfolioSection = () => {
   const projectList = [
     {
       title: "Peaker Services, inc.",
+      imageKey: "Peaker",
       role: "Web Developer",
       technologies: "NextJS, Tailwind CSS, Strapi CMS",
       outcome:
@@ -100,6 +90,7 @@ const PortfolioSection = () => {
     },
     {
       title: "Ping Software USA",
+      imageKey: "Ping",
       role: "Full-Stack Developer",
       technologies: "NextJS, TypeScript, Node.js, Chakra UI",
       outcome:
@@ -109,6 +100,7 @@ const PortfolioSection = () => {
     },
     {
       title: "Marketocracy.io",
+      imageKey: "Marketocracy",
       role: "Frontend Developer",
       technologies: "React, Chakra UI",
       outcome:
@@ -118,6 +110,7 @@ const PortfolioSection = () => {
     },
     {
       title: "911 Ready",
+      imageKey: "NineOneOne",
       role: "Full-Stack Developer",
       technologies: "React, Node.js, DynamoDB",
       outcome:
@@ -127,6 +120,7 @@ const PortfolioSection = () => {
     },
     {
       title: "The Cordial Shoppe",
+      imageKey: "CordialShoppe",
       role: "Full-Stack Developer",
       technologies: "React, Node.js, DynamoDB",
       outcome:
@@ -136,6 +130,7 @@ const PortfolioSection = () => {
     },
     {
       title: "Raffles and Auctions",
+      imageKey: "RAA",
       role: "Full-Stack Developer",
       technologies: "React, Node.js, DynamoDB",
       outcome:
@@ -145,6 +140,7 @@ const PortfolioSection = () => {
     },
     {
       title: "Vinyl Shopping List",
+      imageKey: "VinylShoppingList",
       role: "Frontend Developer",
       technologies: "NextJS, Chakra UI",
       outcome:
@@ -153,6 +149,7 @@ const PortfolioSection = () => {
     },
     {
       title: "Dan's BBQ",
+      imageKey: "DansBBQ",
       role: "Application Developer",
       technologies: "Java, JavaFX",
       outcome:
@@ -161,6 +158,7 @@ const PortfolioSection = () => {
     },
     {
       title: "AlieNFT",
+      imageKey: "AlieNFT",
       role: "Designer/Blockchain Developer",
       technologies: "Solidity, JavaScript, Adobe Illustrator, OpenSea",
       outcome:
@@ -220,7 +218,7 @@ const PortfolioSection = () => {
           </div>
           <div className="w-full md:w-1/2 md:relative">
             <Image
-              src={getImageSrc(project.title as any)}
+              src={getImageSrc(project.imageKey)}
               alt={`${project.title} project screenshot`}
               className="object-cover w-full h-full md:absolute md:inset-0 md:min-h-full"
               layout={getImageLayout()}
