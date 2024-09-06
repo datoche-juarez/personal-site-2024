@@ -173,7 +173,7 @@ export default function Home() {
         </h2>
         <div className="text-lg mt-8 md:mt-10">
           Have a question or want to discuss a potential project? Fill out the
-          form below and I’ll get back to you as soon as possible.
+          form below and I&#39;ll get back to you as soon as possible.
         </div>
         <ContactForm />
         <div className="text-lg mt-8 md:mt-10">
