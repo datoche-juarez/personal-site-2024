@@ -181,7 +181,7 @@ const PortfolioSection = () => {
           key={project.title}
           className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row"
         >
-          <div className="w-full md:w-1/2 md:flex md:flex-col md:justify-between">
+          <div className="w-full md:w-1/2 flex flex-col justify-between flex-1">
             <div>
               <div className="text-2xl font-bold">{project.title}</div>
               <div className="mt-4">
@@ -216,15 +216,17 @@ const PortfolioSection = () => {
               )}
             </div>
           </div>
-          <div className="w-full md:w-1/2 md:relative">
-            <Image
-              src={getImageSrc(project.imageKey)}
-              alt={`${project.title} project screenshot`}
-              className="object-cover w-full h-full md:absolute md:inset-0 md:min-h-full"
-              layout={getImageLayout()}
-              width={isMdUp && !isXlUp ? undefined : 500}
-              height={isMdUp && !isXlUp ? undefined : 500}
-            />
+          <div className="w-full md:w-1/2 md:relative flex-1">
+            <div className="relative w-full min-h-[300px] md:h-full">
+              <Image
+                src={getImageSrc(project.imageKey)}
+                alt={`${project.title} project screenshot`}
+                className="object-cover"
+                fill={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                priority={project.title === "Peaker Services, inc."}
+              />
+            </div>
           </div>
         </div>
       ))}
@@ -232,7 +234,7 @@ const PortfolioSection = () => {
       <div className="text-center mt-12">
         <button
           onClick={() => setShowMore(!showMore)}
-          className="w-full xs:w-[200px] hover:bg-teal  py-2 bg-black text-white rounded"
+          className="w-full xs:w-[200px] hover:bg-teal py-2 bg-black text-white rounded"
         >
           {showMore ? "View Less" : "View More Projects"}
         </button>
