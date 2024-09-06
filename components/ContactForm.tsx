@@ -53,7 +53,7 @@ const ContactForm = () => {
       });
 
       if (response.ok) {
-        setStatus({ success: true, message: "Message sent successfully!" });
+        setStatus({ success: true, message: "Message sent!" });
         setFormData({
           firstName: "",
           lastName: "",

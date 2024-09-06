@@ -26,7 +26,6 @@ const PortfolioSection = () => {
   const isMdUp = useMediaQuery("only screen and (min-width: 768px)");
   const isXlUp = useMediaQuery("only screen and (min-width: 1280px)");
 
-  // State to toggle between showing all projects and showing only 5
   const [showMore, setShowMore] = useState(false);
 
   const getImageSrc = (
@@ -60,7 +59,7 @@ const PortfolioSection = () => {
         case "AlieNFT":
           return AlieNFTImageSquare;
         default:
-          return RAAImage; // RAA does not need a square image, same for all breakpoints
+          return RAAImage;
       }
     }
     switch (project) {
@@ -81,7 +80,7 @@ const PortfolioSection = () => {
       case "AlieNFT":
         return AlieNFTImage;
       default:
-        return RAAImage; // RAA does not need a square image, same for all breakpoints
+        return RAAImage;
     }
   };
 
@@ -96,7 +95,8 @@ const PortfolioSection = () => {
       technologies: "NextJS, Tailwind CSS, Strapi CMS",
       outcome:
         "As part of a small team of developers, I contributed to the development of a fully responsive and modern website for Peaker Services Inc. My role encompassed both frontend development and design work, ensuring that the user interface was intuitive, visually appealing, and aligned with the overall design specifications. I also collaborated with the team to integrate a powerful content management system (Strapi CMS) to allow for easy content updates, and participated in optimizing the site for SEO. The project resulted in a streamlined user experience that has helped increase the company's online visibility and client engagement.",
-      link: "https://beta.peaker.com",
+      link: "https://www.peaker.com",
+      githubLink: "https://github.com/datoche-juarez",
     },
     {
       title: "Ping",
@@ -105,6 +105,7 @@ const PortfolioSection = () => {
       outcome:
         "As one of two developers on the Ping Software USA website project, I played a key role in both frontend and backend development. I was responsible for implementing a responsive design using Chakra UI, ensuring a seamless user experience across devices. On the backend, I utilized serverless architecture, Nodemailer, and DynamoDB to develop the contact functionality, enabling efficient communication for their clients. Additionally, I designed the company logo, which is prominently featured on the website. This project highlighted my ability to deliver robust and user-friendly solutions, helping Ping Software USA present their services effectively to potential clients.",
       link: "https://www.pingsoftwareusa.com/",
+      githubLink: "https://github.com/datoche-juarez",
     },
     {
       title: "Marketocracy",
@@ -113,6 +114,7 @@ const PortfolioSection = () => {
       outcome:
         "Marketocracy.io is a platform that allows users to manage virtual portfolios in a simulated stock market environment, providing valuable insights and data for financial decision-making. In the Marketocracy.io project, I primarily focused on implementing their board game release and contest page. This involved creating a responsive and user-friendly interface while integrating Mailchimp to manage email subscriptions and contest entries. Additionally, I contributed to various frontend tasks across the site, ensuring consistency and a seamless user experience and was also involved in the planning for marketocracymasters.com, helping to align the projects' goals and technical strategies.",
       link: "https://www.marketocracy.io/",
+      githubLink: "https://github.com/datoche-juarez",
     },
     {
       title: "NineOneOne",
@@ -121,6 +123,7 @@ const PortfolioSection = () => {
       outcome:
         "911 Ready was a project aimed at creating a platform to improve emergency response times by providing first responders with critical information before they arrive on the scene. The platform was designed to equip first responders with essential details about household members with special needs, enabling them to act more quickly and efficiently. Working with a small team of developers, I contributed to both frontend and backend development, focusing on creating a scalable and secure application that could handle real-time data efficiently. Additionally, I was responsible for all HTML email development, ensuring that communication channels were reliable and effective.",
       link: "https://www.911ready.link/Homepage",
+      githubLink: "https://github.com/datoche-juarez",
     },
     {
       title: "CordialShoppe",
@@ -129,6 +132,7 @@ const PortfolioSection = () => {
       outcome:
         "The Cordial Shoppe is a market and deli for which we developed a comprehensive website featuring full online ordering functionality. My contributions spanned everything from frontend development to backend work on the API, and database integration with DynamoDB. I played a key role in building the client dashboard and implementing payment processing using Authorize.net. Additionally, I helped integrate a ticket printer system for the cooks, ensuring seamless operations from online order to kitchen preparation. The project successfully delivered a streamlined and efficient online ordering system tailored to the client's unique needs.",
       link: "https://www.cordial-shoppe.com/index",
+      githubLink: "https://github.com/datoche-juarez",
     },
     {
       title: "RAA",
@@ -137,6 +141,7 @@ const PortfolioSection = () => {
       outcome:
         "Raffles and Auctions is a platform designed for managing online raffles and auctions for charities and other organizations. As one of the main developers on this project, I contributed to both frontend and backend development, implementing key features such as real-time bidding, secure user authentication, and real-time text and email notifications for bid updates. These features ensured a smooth and engaging user experience, while also providing the necessary security and reliability for charitable events. The combination of React, Node.js, and DynamoDB allowed us to build a responsive and scalable platform that meets the unique needs of non-profit organizations.",
       link: "https://www.raalive.com/",
+      githubLink: "https://github.com/datoche-juarez",
     },
     {
       title: "VinylShoppingList",
@@ -144,7 +149,7 @@ const PortfolioSection = () => {
       technologies: "NextJS, Chakra UI",
       outcome:
         "Vinyl Shopping List is a personal project I developed to enhance my process of creating sample-based music, a hobby of mine. Utilizing the Spotify API, the application pulls data from my 'Songs to Sample' playlist, organizes it by album, and converts it into an interactive shopping list for vinyl records I plan to use in my music. The list updates dynamically based on records already purchased, providing an organized and efficient way to manage my vinyl collection. I focused on creating a clean and user-friendly interface that complements the creative process, seamlessly integrating the Spotify API with a responsive and visually appealing design.",
-      link: "https://github.com/datoche-juarez/next-shopping-list",
+      githubLink: "https://github.com/datoche-juarez/next-shopping-list",
     },
     {
       title: "DansBBQ",
@@ -152,7 +157,7 @@ const PortfolioSection = () => {
       technologies: "Java, JavaFX",
       outcome:
         "Dan's BBQ is a Java-based point of sale application I developed using Java and JavaFX. The application allows the restaurant to input menu items based on customer orders, automatically calculates the total price, and prints both an order receipt for the customer and a kitchen ticket for food preparation. While focused on streamlining order processing, the application also has the potential to assist in inventory management by providing detailed records of sales and ingredient usage. This project showcases my ability to create practical, efficient software solutions tailored to the needs of small businesses.",
-      link: "https://github.com/datoche-juarez/dansBBQ",
+      githubLink: "https://github.com/datoche-juarez/dansBBQ",
     },
     {
       title: "AlieNFT",
@@ -160,11 +165,11 @@ const PortfolioSection = () => {
       technologies: "Solidity, JavaScript, Adobe Illustrator, OpenSea",
       outcome:
         "AlieNFT's is an NFT project I developed in collaboration with two partners. We began by designing unique features for alien NFTs using Adobe Illustrator, and then used an open-source NFT random generator engine to create over 10,000 distinct NFTs. Additionally, we created 100 aliens as gifs, which were released as rare collectibles. I wrote the smart contracts in Solidity and deployed the NFTs to the Ethereum marketplace via OpenSea. This project demonstrates my ability to work at the intersection of design and blockchain technology, bringing creative digital assets to life in the rapidly evolving NFT space.",
-      link: "https://github.com/datoche-juarez",
+      link: "https://testnets.opensea.io/collection/alienfts",
+      githubLink: "https://github.com/datoche-juarez",
     },
   ];
 
-  // Determine the number of projects to show based on state
   const visibleProjects = showMore ? projectList : projectList.slice(0, 5);
 
   return (
@@ -173,7 +178,7 @@ const PortfolioSection = () => {
         My Portfolio
       </h2>
 
-      {visibleProjects.map((project, index) => (
+      {visibleProjects.map((project) => (
         <div
           key={project.title}
           className="flex flex-col-reverse gap-4 mt-8 md:mt-10 md:flex-row"
@@ -194,21 +199,23 @@ const PortfolioSection = () => {
             </div>
             <div className="flex space-x-6 mt-4">
               <a
-                href="https://github.com/datoche-juarez"
+                href={project.githubLink}
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-teal"
               >
                 <FaGithub size={24} />
               </a>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-teal"
-              >
-                <HiOutlineExternalLink size={24} />
-              </a>
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-teal"
+                >
+                  <HiOutlineExternalLink size={24} />
+                </a>
+              )}
             </div>
           </div>
           <div className="w-full md:w-1/2 md:relative">
@@ -224,7 +231,6 @@ const PortfolioSection = () => {
         </div>
       ))}
 
-      {/* View More / View Less Button */}
       <div className="text-center mt-12">
         <button
           onClick={() => setShowMore(!showMore)}
