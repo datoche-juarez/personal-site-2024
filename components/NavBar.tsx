@@ -84,8 +84,8 @@ const NavBar = () => {
                     <text
                       transform="translate(85.98 346.16)"
                       fill="#fff"
-                      font-family="KiloGram, KiloGram"
-                      font-size="410.88"
+                      fontFamily="KiloGram, KiloGram"
+                      fontSize="410.88"
                     >
                       <tspan x="0" y="0">
                         a
@@ -94,8 +94,8 @@ const NavBar = () => {
                     <text
                       transform="translate(32.79 346.16)"
                       fill="#fff"
-                      font-family="KiloGram, KiloGram"
-                      font-size="205.44"
+                      fontFamily="KiloGram, KiloGram"
+                      fontSize="205.44"
                     >
                       <tspan x="0" y="0">
                         d
@@ -104,8 +104,8 @@ const NavBar = () => {
                     <text
                       transform="translate(376.25 243.24)"
                       fill="#fff"
-                      font-family="KiloGram, KiloGram"
-                      font-size="246.53"
+                      fontFamily="KiloGram, KiloGram"
+                      fontSize="246.53"
                     >
                       <tspan x="0" y="0">
                         j
