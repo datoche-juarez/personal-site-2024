@@ -13,8 +13,11 @@ import MySQLIcon from "../assets/icons/mysql-icon.svg";
 import AWSIcon from "../assets/icons/aws.svg";
 import StrapiIcon from "../assets/icons/strapi-icon.svg";
 import GitIcon from "../assets/icons/git-icon.svg";
+import { useState, useEffect } from "react";
 
 const IconMarquee = () => {
+  const [marqueeSpeed, setMarqueeSpeed] = useState(50);
+
   const icons = [
     { src: HTMLIcon, alt: "HTML5 Logo" },
     { src: CSSIcon, alt: "CSS3 Logo" },
@@ -30,9 +33,22 @@ const IconMarquee = () => {
     { src: GitIcon, alt: "Git Logo" },
   ];
 
+  useEffect(() => {
+    // Check screen size and adjust speed for mobile
+    const handleResize = () => {
+      const isMobile = window.innerWidth < 768;
+      setMarqueeSpeed(isMobile ? 30 : 50); // Slow down on mobile
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Call it once on mount
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="relative overflow-hidden mask-gradient">
-      <Marquee speed={50} className="flex content-around">
+      <Marquee speed={marqueeSpeed} className="flex content-around">
         {icons.map((icon, index) => (
           <div key={index} className="mr-8 md:mr-11 w-14 h-14">
             <Image
@@ -41,6 +57,7 @@ const IconMarquee = () => {
               width={56}
               height={56}
               className="w-full h-full"
+              priority // Ensure images are preloaded
             />
           </div>
         ))}
