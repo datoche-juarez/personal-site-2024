@@ -68,6 +68,23 @@
 
   --color-background: #252629;
   --color-background-searchbar: #1e1e1e;
+
+  /* Color Palette Colors:  */
+  --color-primary-columbiablue-light: #e6f6fa;
+  --color-primary-columbiablue: #bccdd1;
+  --color-primary-columbiablue-dark: #7b98a0;
+
+  --color-primary-softcoral-light: #ffb2b2;
+  --color-primary-softcoral: #ff6b6b;
+  --color-primary-softcoral-dark: #fe4e4e;
+
+  --color-primary-lightseagreen-light: #62e6db;
+  --color-primary-lightseagreen: #1db5a8;
+  --color-primary-lightseagreen-dark: #026f66;
+
+  --color-primary-night-light: #404040;
+  --color-primary-night: #111111;
+  --color-primary-night-dark: #000000;
 }
 
 html {
@@ -76,7 +93,7 @@ html {
 
 body {
   background-color: #ffffff;
-  color: #111111;
+  color: var(--color-primary-night);
 }
 
 .mask-gradient {

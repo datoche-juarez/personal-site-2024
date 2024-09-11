@@ -10,7 +10,7 @@ export default function Home() {
       <Section id="about">
         <div className="flex flex-col-reverse gap-6 sm:gap-4 sm:flex-row">
           <div className="w-full sm:w-1/2">
-            <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
+            <h2 className="font-bold underline decoration-2 decoration-columbiablue underline-offset-[10px] text-h1">
               About Me
             </h2>
             <p className="mt-8 leading-6 md:mt-10 sm:leading-5 md:leading-6">
@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </Section>
       <Section id="skills">
-        <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
+        <h2 className="font-bold underline decoration-2 decoration-columbiablue underline-offset-[10px] text-h1">
           My Skills
         </h2>
         <div className="mt-8 md:mt-10">
@@ -100,7 +100,7 @@ export default function Home() {
         <PortfolioSection />
       </Section>
       <Section id="resume">
-        <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
+        <h2 className="font-bold underline decoration-2 decoration-columbiablue underline-offset-[10px] text-h1">
           My Resume
         </h2>
         <div className="flex flex-col gap-4 mt-8 md:mt-10 md:flex-row">
@@ -168,7 +168,7 @@ export default function Home() {
         </div>
       </Section>
       <Section id="contact">
-        <h2 className="font-bold underline decoration-2 decoration-gray-400 underline-offset-[10px] text-h1">
+        <h2 className="font-bold underline decoration-2 decoration-columbiablue underline-offset-[10px] text-h1">
           Contact
         </h2>
         <div className="text-lg mt-8 md:mt-10">

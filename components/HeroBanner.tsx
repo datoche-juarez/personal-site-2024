@@ -24,20 +24,20 @@ const HeroBanner = () => {
               Building the Future, One Line of Code at a Time
             </h1>
             <p className="mt-6 text-lg md:text-xl">
-              I&#39;m Dan, a passionate web developer specializing in both frontend
-              and backend development. With a strong foundation in modern
-              technologies and a commitment to quality, I bring your digital
-              ideas to life. Explore my portfolio and see how my skills can help
-              elevate your next project.
+              I&#39;m Dan, a passionate web developer specializing in both
+              frontend and backend development. With a strong foundation in
+              modern technologies and a commitment to quality, I bring your
+              digital ideas to life. Explore my portfolio and see how my skills
+              can help elevate your next project.
             </p>
 
             <div className="flex flex-col justify-center gap-2 mt-6 xs:flex-row xs:gap-0 xs:justify-start xs:space-x-2 md:space-x-4">
               <a href="#portfolio">
-                <button className="w-full py-2 text-black bg-white rounded xs:w-[200px] hover:bg-teal hover:text-white border border-white">
+                <button className="w-full py-2 text-black bg-white rounded xs:w-[200px] hover:bg-night hover:text-softcoral border border-white hover:border-softcoral">
                   View My Portfolio
                 </button>
               </a>
-              <button className="w-full py-2 text-white border border-white rounded xs:w-[200px] hover:bg-teal">
+              <button className="w-full py-2 text-white border border-white rounded xs:w-[200px] hover:bg-softcoral">
                 <a href="/DAJ_Resume.pdf" download>
                   Download My Resume
                 </a>

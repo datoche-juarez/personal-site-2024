@@ -98,6 +98,27 @@ module.exports = {
           DEFAULT: "var(--color-primary-dividergray)",
           dark: "var(--color-primary-dividergray-dark)",
         },
+        // Color Palette Colors:
+        columbiablue: {
+          light: "var(--color-primary-columbiablue-light)",
+          DEFAULT: "var(--color-primary-columbiablue)",
+          dark: "var(--color-primary-columbiablue-dark)",
+        },
+        softcoral: {
+          light: "var(--color-primary-softcoral-light)",
+          DEFAULT: "var(--color-primary-softcoral)",
+          dark: "var(--color-primary-softcoral-dark)",
+        },
+        lightseagreen: {
+          light: "var(--color-primary-lightseagreen-light)",
+          DEFAULT: "var(--color-primary-lightseagreen)",
+          dark: "var(--color-primary-lightseagreen-dark)",
+        },
+        night: {
+          light: "var(--color-primary-night-light)",
+          DEFAULT: "var(--color-primary-night)",
+          dark: "var(--color-primary-night-dark)",
+        },
       },
       fontSize: {
         h1: [
