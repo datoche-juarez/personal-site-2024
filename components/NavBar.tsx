@@ -45,24 +45,24 @@ const NavBar = () => {
 
           {/* Hamburger Icon */}
           <div className="md:hidden" onClick={toggleMenu}>
-            <FaBars className="text-2xl text-white hover:fill-teal-light" />
+            <FaBars className="text-2xl text-white hover:fill-softcoral" />
           </div>
 
           {/* Desktop Nav Links */}
           <div className="hidden gap-4 md:flex">
-            <a href="#about" className="hover:text-teal-light">
+            <a href="#about" className="hover:text-softcoral">
               About
             </a>
-            <a href="#skills" className="hover:text-teal-light">
+            <a href="#skills" className="hover:text-softcoral">
               Skills
             </a>
-            <a href="#portfolio" className="hover:text-teal-light">
+            <a href="#portfolio" className="hover:text-softcoral">
               Portfolio
             </a>
-            <a href="#resume" className="hover:text-teal-light">
+            <a href="#resume" className="hover:text-softcoral">
               Resume
             </a>
-            <a href="#contact" className="hover:text-teal-light">
+            <a href="#contact" className="hover:text-softcoral">
               Contact
             </a>
           </div>
@@ -93,7 +93,7 @@ const NavBar = () => {
 
             {/* Close Icon */}
             <div onClick={toggleMenu}>
-              <FaTimes className="text-2xl text-white hover:fill-teal-light" />
+              <FaTimes className="text-2xl text-white hover:fill-softcoral" />
             </div>
           </div>
 
@@ -101,35 +101,35 @@ const NavBar = () => {
           <div className="flex flex-col items-center w-full gap-4 mt-4 xs:flex-row xs:justify-center">
             <a
               href="#about"
-              className="hover:text-teal-light"
+              className="hover:text-softcoral"
               onClick={toggleMenu}
             >
               About
             </a>
             <a
               href="#skills"
-              className="hover:text-teal-light"
+              className="hover:text-softcoral"
               onClick={toggleMenu}
             >
               Skills
             </a>
             <a
               href="#portfolio"
-              className="hover:text-teal-light"
+              className="hover:text-softcoral"
               onClick={toggleMenu}
             >
               Portfolio
             </a>
             <a
               href="#resume"
-              className="hover:text-teal-light"
+              className="hover:text-softcoral"
               onClick={toggleMenu}
             >
               Resume
             </a>
             <a
               href="#contact"
-              className="hover:text-teal-light"
+              className="hover:text-softcoral"
               onClick={toggleMenu}
             >
               Contact

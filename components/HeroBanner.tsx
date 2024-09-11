@@ -33,11 +33,11 @@ const HeroBanner = () => {
 
             <div className="flex flex-col justify-center gap-2 mt-6 xs:flex-row xs:gap-0 xs:justify-start xs:space-x-2 md:space-x-4">
               <a href="#portfolio">
-                <button className="w-full py-2 text-black bg-white rounded xs:w-[200px] hover:bg-night hover:text-softcoral border border-white hover:border-softcoral">
+                <button className="w-full py-2 text-black bg-white rounded xs:w-[200px] hover:bg-softcoral hover:text-white border border-white hover:border-softcoral">
                   View My Portfolio
                 </button>
               </a>
-              <button className="w-full py-2 text-white border border-white rounded xs:w-[200px] hover:bg-softcoral">
+              <button className="w-full py-2 text-white border border-white rounded xs:w-[200px] hover:border-softcoral hover:text-softcoral">
                 <a href="/DAJ_Resume.pdf" download>
                   Download My Resume
                 </a>
