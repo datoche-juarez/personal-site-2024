@@ -79,7 +79,7 @@ const ContactForm = () => {
     <form className="mt-8 md:mt-10" onSubmit={handleSubmit}>
       <div className="mb-4 flex flex-col md:flex-row gap-4">
         <div className="w-full md:w-1/2">
-          <label className="block text-black mb-2 font-medium">
+          <label className="block text-night mb-2 font-medium">
             First Name
           </label>
           <input
@@ -87,59 +87,59 @@ const ContactForm = () => {
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
-            className="w-full h-10 border border-[#767676] rounded p-2"
+            className="w-full h-10 border border-columbiablue rounded p-2"
             required
           />
         </div>
         <div className="w-full md:w-1/2">
-          <label className="block text-black mb-2 font-medium">Last Name</label>
+          <label className="block text-night mb-2 font-medium">Last Name</label>
           <input
             type="text"
             name="lastName"
             value={formData.lastName}
             onChange={handleChange}
-            className="w-full h-10 border border-[#767676] rounded p-2"
+            className="w-full h-10 border border-columbiablue rounded p-2"
             required
           />
         </div>
       </div>
       <div className="mb-4 flex flex-col md:flex-row gap-4">
         <div className="w-full md:w-1/2">
-          <label className="block text-black mb-2 font-medium">Email</label>
+          <label className="block text-night mb-2 font-medium">Email</label>
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full h-10 border border-[#767676] rounded p-2"
+            className="w-full h-10 border border-columbiablue rounded p-2"
             required
           />
         </div>
         <div className="w-full md:w-1/2">
-          <label className="block text-black mb-2 font-medium">Phone</label>
+          <label className="block text-night mb-2 font-medium">Phone</label>
           <input
             type="tel"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full h-10 border border-[#767676] rounded p-2"
+            className="w-full h-10 border border-columbiablue rounded p-2"
             required
           />
         </div>
       </div>
       <div className="mb-4">
-        <label className="block text-black mb-2 font-medium">Message</label>
+        <label className="block text-night mb-2 font-medium">Message</label>
         <textarea
           name="message"
           value={formData.message}
           onChange={handleChange}
-          className="w-full h-52 border border-[#767676] rounded p-2"
+          className="w-full h-52 border border-columbiablue rounded p-2"
           required
         ></textarea>
       </div>
       <button
         type="submit"
-        className="w-full xs:w-[200px] hover:bg-teal py-2 bg-black text-white text-base rounded"
+        className="w-full xs:w-[200px] hover:bg-softcoral hover:drop-shadow-lg py-2 bg-night text-white text-base rounded hover:shadow-2xl"
       >
         Submit
       </button>

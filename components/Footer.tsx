@@ -3,7 +3,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="text-white bg-black">
+    <footer className="text-white bg-night">
       <div className="flex flex-col xs:flex-row items-center justify-between px-4 mx-auto sm:px-4 lg:px-[121px] xl:max-w-screen-xl xl:px-[121px] xl:mx-auto 2xl:px-0 2xl:max-w-screen-xl py-28">
         {/* Logo */}
         <div className="flex justify-center w-1/4 mb-6 xs:mb-0 xs:justify-start">
@@ -19,7 +19,7 @@ const Footer = () => {
                   d="m369.34,38.18v143.97c0,9.61-3.21,17.75-9.61,24.65-1.84,1.91-3.79,3.52-5.85,4.87L231.92,0l-115.99,201.32c-2.6-3.8-5.63-7.43-9.09-10.89-13.76-13.76-30.2-20.75-49.51-20.75H0v140.52h410.65l-30.6-53.11c5.87-3.64,11.42-8.08,16.66-13.32,16.76-17.26,25.15-37.72,25.15-61.63V38.18h-52.51ZM47.87,266.65h-4.31v-53.21h13.76c8.01,0,14.59,2.67,19.31,8.22,4.93,5.55,7.4,11.71,7.4,18.49s-2.26,13.15-7.81,18.7c-8.22,8.22-18.28,8.01-28.35,7.81Zm156.52-43.96l27.53-47.25,27.12,47.25h-54.65Z"
                   fill="#fff"
                   strokeWidth="0"
-                  className="hover:fill-teal-light"
+                  className="hover:fill-softcoral"
                 />
               </g>
             </svg>
@@ -34,7 +34,7 @@ const Footer = () => {
               href="https://www.facebook.com/daniel.atochejuarez"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-teal-light"
+              className="hover:text-lightseagreen-light"
             >
               <FaFacebook size={24} />
             </a>
@@ -42,7 +42,7 @@ const Footer = () => {
               href="https://github.com/datoche-juarez"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-teal-light"
+              className="hover:text-lightseagreen-light"
             >
               <FaGithub size={24} />
             </a>
@@ -50,7 +50,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/daniel-atoche-juarez-7272a3233/"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-teal-light"
+              className="hover:text-lightseagreen-light"
             >
               <FaLinkedin size={24} />
             </a>

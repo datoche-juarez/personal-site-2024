@@ -160,7 +160,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-12">
-          <button className="w-full xs:w-[200px] hover:bg-teal  py-2 bg-black text-white text-base rounded">
+          <button className="w-full xs:w-[200px] hover:bg-softcoral  py-2 bg-night text-white text-base rounded hover:shadow-2xl hover:drop-shadow-lg">
             <a href="/DAJ_Resume.pdf" download>
               Download My Resume
             </a>
@@ -180,7 +180,7 @@ export default function Home() {
           Prefer to reach out directly? You can contact me via email at{" "}
           <a
             href="mailto:dtoch123@gmail.com"
-            className="text-purple-600 hover:underline"
+            className="text-softcoral hover:underline"
           >
             dtoch123@gmail.com{" "}
           </a>
@@ -189,7 +189,7 @@ export default function Home() {
             href="https://www.linkedin.com/in/daniel-atoche-juarez-7272a3233/"
             target="_blank"
             rel="noreferrer"
-            className="text-purple-600 hover:underline"
+            className="text-softcoral hover:underline"
           >
             LinkedIn
           </a>
@@ -201,7 +201,7 @@ export default function Home() {
             href="https://github.com/datoche-juarez"
             target="_blank"
             rel="noreferrer"
-            className="text-purple-600 hover:underline"
+            className="text-softcoral hover:underline"
           >
             GitHub
           </a>{" "}

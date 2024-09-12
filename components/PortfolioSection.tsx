@@ -239,7 +239,7 @@ const PortfolioSection = () => {
       <div className="text-center mt-12">
         <button
           onClick={() => setShowMore(!showMore)}
-          className="w-full xs:w-[200px] hover:bg-teal py-2 bg-black text-white rounded"
+          className="w-full xs:w-[200px] hover:bg-softcoral py-2 bg-night hover:shadow-2xl hover:drop-shadow-lg text-white rounded"
         >
           {showMore ? "View Less" : "View More Projects"}
         </button>
