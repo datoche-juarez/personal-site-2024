@@ -141,7 +141,7 @@ export default function Home() {
               </div>
               <div className="font-bold">Honors and Awards</div>
               <ul className="list-disc list-inside">
-                <li>Dean’s List for each semester</li>
+                <li>Dean’s List for every semester</li>
                 <li className="">Graduated Summa Cum Laude</li>
               </ul>
               <div className="">
@@ -153,7 +153,7 @@ export default function Home() {
               <div className="font-bold">Honors and Awards</div>
               <ul className="list-disc list-inside">
                 <li>HFC Honors Program graduate</li>
-                <li>Dean’s List for each semester</li>
+                <li>Dean’s List for every semester</li>
                 <li className="">Graduated Summa Cum Laude</li>
               </ul>
             </div>
