@@ -1,7 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["images.unsplash.com"], // Add this line
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "sdk.bitmoji.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
   },
   eslint: {
     ignoreDuringBuilds: true,

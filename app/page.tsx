@@ -39,7 +39,7 @@ export default function Home() {
           >
             <div className="relative flex items-center justify-center w-full h-full sm:h-auto sm:w-auto">
               <Image
-                src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://sdk.bitmoji.com/me/sticker/5_868ETNG03VgZJIAxzt5yATyVeig0bGqzyNqTVZDdc70Q2udYIwTQ/20054902.png?p=dD1zO2w9ZW4.v1&size=large"
                 alt="About me placeholder"
                 width={3464}
                 height={2309}
