@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import HeroBanner from "@/components/HeroBanner"; // Import the HeroBanner component
 import Footer from "@/components/Footer";
+import GoogleAnalytics from "../components/GoogleAnalytics";
 
 export const metadata = {
   title: "Daniel Atoche-Juarez",
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.className}>
         <HeroBanner />
+        <GoogleAnalytics />
         <main>{children}</main>
         <Footer />
       </body>
