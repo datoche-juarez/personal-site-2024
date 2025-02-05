@@ -3,10 +3,12 @@ import IconMarquee from "@/components/IconMarquee";
 import PortfolioSection from "@/components/PortfolioSection";
 import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
+import EnableBorders from "@/components/EnableBorders";
 
 export default function Home() {
   return (
     <main>
+      <EnableBorders />
       <Section id="about">
         <div className="flex flex-col-reverse gap-6 sm:gap-4 sm:flex-row">
           <div className="w-full sm:w-1/2">
