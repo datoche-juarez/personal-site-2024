@@ -2,10 +2,15 @@
 
 import Script from "next/script";
 
-const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
+// Log the tracking ID to verify it's being injected at build time
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID || "NOT_DEFINED";
+console.log("🚀 GA_TRACKING_ID inside component:", GA_TRACKING_ID);
 
 export default function GoogleAnalytics() {
-  if (!GA_TRACKING_ID) return null;
+  if (!GA_TRACKING_ID || GA_TRACKING_ID === "NOT_DEFINED") {
+    console.error("❌ Google Analytics ID is missing or undefined!");
+    return null;
+  }
 
   return (
     <>
