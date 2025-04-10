@@ -100,7 +100,7 @@ const PortfolioSection = () => {
       technologies: "NextJS, TypeScript, Node.js, Chakra UI",
       outcome:
         "As one of two developers on the Ping Software USA website project, I played a key role in both frontend and backend development. I was responsible for implementing a responsive design using Chakra UI, ensuring a seamless user experience across devices. On the backend, I utilized serverless architecture, Nodemailer, and DynamoDB to develop the contact functionality, enabling efficient communication for their clients. Additionally, I designed the company logo, which is prominently featured on the website. This project highlighted my ability to deliver robust and user-friendly solutions, helping Ping Software USA present their services effectively to potential clients.",
-      link: "https://www.pingsoftwareusa.com/",
+      link: "https://main.d2shnwn9ugmo4y.amplifyapp.com/",
       githubLink: "https://github.com/datoche-juarez",
     },
     {

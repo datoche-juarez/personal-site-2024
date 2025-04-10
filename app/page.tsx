@@ -116,8 +116,8 @@ export default function Home() {
                   for SEO."
                 </li>
                 <li className="pl-2">
-                  <span className="font-bold">Freelance Web Development</span>{" "}
-                  (October 2023 - Present): "Independent projects involving web
+                  <span className="font-bold">DAJ Tech Solutions</span> (October
+                  2023 - Present): "Independent projects involving web
                   development, consulting, and technology solutions for a
                   variety of clients.
                 </li>
