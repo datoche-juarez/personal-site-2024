@@ -1,7 +1,7 @@
-import Section from "@/components/Section";
-import IconMarquee from "@/components/IconMarquee";
-import PortfolioSection from "@/components/PortfolioSection";
-import ContactForm from "@/components/ContactForm";
+import Section from "@/components/Section/Section";
+import IconMarquee from "@/components/IconMarquee/IconMarquee";
+import PortfolioSection from "@/components/PortfolioSection/PortfolioSection";
+import ContactForm from "@/components/ContactForm/ContactForm";
 import Image from "next/image";
 
 export default function Home() {

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import HeroBanner from "@/components/HeroBanner"; // Import the HeroBanner component
-import Footer from "@/components/Footer";
-import GoogleAnalytics from "../components/GoogleAnalytics";
+import HeroBanner from "@/components/HeroBanner/HeroBanner"; // Import the HeroBanner component
+import Footer from "@/components/Footer/Footer";
+import GoogleAnalytics from "../components/GoogleAnalytics/GoogleAnalytics";
 
 export const metadata = {
   title: "Daniel Atoche-Juarez",
