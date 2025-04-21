@@ -44,9 +44,13 @@ const NavBar = () => {
           </div>
 
           {/* Hamburger Icon */}
-          <div className="md:hidden" onClick={toggleMenu}>
+          <button
+            onClick={toggleMenu}
+            className="md:hidden"
+            aria-label="Open menu"
+          >
             <FaBars className="text-2xl text-white hover:fill-softcoral" />
-          </div>
+          </button>
 
           {/* Desktop Nav Links */}
           <div className="hidden gap-4 md:flex">
@@ -92,9 +96,9 @@ const NavBar = () => {
             </div>
 
             {/* Close Icon */}
-            <div onClick={toggleMenu}>
+            <button onClick={toggleMenu} aria-label="Close menu">
               <FaTimes className="text-2xl text-white hover:fill-softcoral" />
-            </div>
+            </button>
           </div>
 
           {/* Mobile Nav Links */}
