@@ -43,6 +43,9 @@ const ContactForm = () => {
       Service: "danielatochejuarez.com",
     };
 
+    console.log("🟡 Submitting form to:", API_URL);
+    console.log("📦 Payload:", combinedData);
+
     try {
       const response = await fetch(`${API_URL}`, {
         method: "POST",
@@ -51,6 +54,8 @@ const ContactForm = () => {
         },
         body: JSON.stringify(combinedData),
       });
+
+      console.log("🟢 Response received:", response);
 
       if (response.ok) {
         setStatus({ success: true, message: "Message sent!" });
@@ -62,12 +67,17 @@ const ContactForm = () => {
           message: "",
         });
       } else {
+        const errorText = await response.text();
+        console.error("🔴 API returned error response:", errorText);
+
         setStatus({
           success: false,
           message: "Failed to send the message. Please try again later.",
         });
       }
     } catch (error) {
+      console.error("❌ Fetch threw an error:", error);
+
       setStatus({
         success: false,
         message: "There was an error. Please try again.",
@@ -79,10 +89,14 @@ const ContactForm = () => {
     <form className="mt-8 md:mt-10" onSubmit={handleSubmit}>
       <div className="mb-4 flex flex-col md:flex-row gap-4">
         <div className="w-full md:w-1/2">
-          <label className="block text-night mb-2 font-medium">
+          <label
+            htmlFor="firstName"
+            className="block text-night mb-2 font-medium"
+          >
             First Name
           </label>
           <input
+            id="firstName"
             type="text"
             name="firstName"
             value={formData.firstName}
@@ -92,8 +106,14 @@ const ContactForm = () => {
           />
         </div>
         <div className="w-full md:w-1/2">
-          <label className="block text-night mb-2 font-medium">Last Name</label>
+          <label
+            htmlFor="lastName"
+            className="block text-night mb-2 font-medium"
+          >
+            Last Name
+          </label>
           <input
+            id="lastName"
             type="text"
             name="lastName"
             value={formData.lastName}
@@ -105,8 +125,11 @@ const ContactForm = () => {
       </div>
       <div className="mb-4 flex flex-col md:flex-row gap-4">
         <div className="w-full md:w-1/2">
-          <label className="block text-night mb-2 font-medium">Email</label>
+          <label htmlFor="email" className="block text-night mb-2 font-medium">
+            Email
+          </label>
           <input
+            id="email"
             type="email"
             name="email"
             value={formData.email}
@@ -116,8 +139,11 @@ const ContactForm = () => {
           />
         </div>
         <div className="w-full md:w-1/2">
-          <label className="block text-night mb-2 font-medium">Phone</label>
+          <label htmlFor="phone" className="block text-night mb-2 font-medium">
+            Phone
+          </label>
           <input
+            id="phone"
             type="tel"
             name="phone"
             value={formData.phone}
@@ -128,8 +154,11 @@ const ContactForm = () => {
         </div>
       </div>
       <div className="mb-4">
-        <label className="block text-night mb-2 font-medium">Message</label>
+        <label htmlFor="message" className="block text-night mb-2 font-medium">
+          Message
+        </label>
         <textarea
+          id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
