@@ -119,13 +119,13 @@ export default function Home() {
                   <span className="font-bold">DAJ Tech Solutions</span> (October
                   2023 - Present): "Independent projects involving web
                   development, consulting, and technology solutions for a
-                  variety of clients.
+                  variety of clients."
                 </li>
                 <li className="pl-2">
                   <span className="font-bold">Ping Software USA</span> (January
                   2021 - October 2023): "Full-Stack Developer contributing to
                   the development of custom web applications and ensuring smooth
-                  project delivery.
+                  project delivery."
                 </li>
               </ul>
             </div>
