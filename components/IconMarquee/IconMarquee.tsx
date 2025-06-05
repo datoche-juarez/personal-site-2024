@@ -1,36 +1,37 @@
 "use client";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-import HTMLIcon from "../../assets/icons/html-icon.svg";
-import CSSIcon from "../../assets/icons/css-icon.svg";
-import JavaScriptIcon from "../../assets/icons/javascript-icon.svg";
-import TypeScriptIcon from "../../assets/icons/typescript-icon.svg";
-import ReactIcon from "../../assets/icons/react-icon.svg";
-import NextJSIcon from "../../assets/icons/nextjs-icon.svg";
-import TailwindIcon from "../../assets/icons/tailwind-icon.svg";
-import NodeJSIcon from "../../assets/icons/nodejs-icon.svg";
-import MySQLIcon from "../../assets/icons/mysql-icon.svg";
-import AWSIcon from "../../assets/icons/aws.svg";
-import StrapiIcon from "../../assets/icons/strapi-icon.svg";
-import GitIcon from "../../assets/icons/git-icon.svg";
 import { useState, useEffect } from "react";
+
+import ColoredHTMLIcon from "../../assets/colored-icons/html-icon.svg";
+import ColoredCSSIcon from "../../assets/colored-icons/css-icon.svg";
+import ColoredJavaScriptIcon from "../../assets/colored-icons/javascript-icon.svg";
+import ColoredTypeScriptIcon from "../../assets/colored-icons/typescript-icon.svg";
+import ColoredReactIcon from "../../assets/colored-icons/react-icon.svg";
+import ColoredNextJSIcon from "../../assets/colored-icons/nextjs-icon.svg";
+import ColoredTailwindIcon from "../../assets/colored-icons/tailwind-icon.svg";
+import ColoredNodeJSIcon from "../../assets/colored-icons/nodejs-icon.svg";
+import ColoredMySQLIcon from "../../assets/colored-icons/mysql-icon.svg";
+import ColoredAWSIcon from "../../assets/colored-icons/aws-icon.svg";
+import ColoredStrapiIcon from "../../assets/colored-icons/strapi-icon.svg";
+import ColoredGitIcon from "../../assets/colored-icons/git-icon.svg";
 
 const IconMarquee = () => {
   const [marqueeSpeed, setMarqueeSpeed] = useState(50);
 
   const icons = [
-    { src: HTMLIcon, alt: "HTML5 Logo" },
-    { src: CSSIcon, alt: "CSS3 Logo" },
-    { src: JavaScriptIcon, alt: "JavaScript Logo" },
-    { src: TypeScriptIcon, alt: "TypeScript Logo" },
-    { src: ReactIcon, alt: "React Logo" },
-    { src: NextJSIcon, alt: "Next.js Logo" },
-    { src: TailwindIcon, alt: "Tailwind CSS Logo" },
-    { src: NodeJSIcon, alt: "Node.js Logo" },
-    { src: MySQLIcon, alt: "MySQL Logo" },
-    { src: AWSIcon, alt: "AWS Logo" },
-    { src: StrapiIcon, alt: "Strapi Logo" },
-    { src: GitIcon, alt: "Git Logo" },
+    { src: ColoredHTMLIcon, alt: "HTML5 Logo" },
+    { src: ColoredCSSIcon, alt: "CSS3 Logo" },
+    { src: ColoredJavaScriptIcon, alt: "JavaScript Logo" },
+    { src: ColoredTypeScriptIcon, alt: "TypeScript Logo" },
+    { src: ColoredReactIcon, alt: "React Logo" },
+    { src: ColoredNextJSIcon, alt: "Next.js Logo" },
+    { src: ColoredTailwindIcon, alt: "Tailwind CSS Logo" },
+    { src: ColoredNodeJSIcon, alt: "Node.js Logo" },
+    { src: ColoredMySQLIcon, alt: "MySQL Logo" },
+    { src: ColoredAWSIcon, alt: "AWS Logo" },
+    { src: ColoredStrapiIcon, alt: "Strapi Logo" },
+    { src: ColoredGitIcon, alt: "Git Logo" },
   ];
 
   useEffect(() => {
@@ -47,7 +48,7 @@ const IconMarquee = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden mask-gradient">
+    <div className="relative overflow-hidden mask-mask-marquee">
       <Marquee speed={marqueeSpeed} className="flex content-around">
         {icons.map((icon, index) => (
           <div key={index} className="mr-8 md:mr-11 w-14 h-14">
