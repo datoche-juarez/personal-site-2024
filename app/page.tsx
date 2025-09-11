@@ -3,6 +3,7 @@ import IconMarquee from "@/components/IconMarquee/IconMarquee";
 import PortfolioSection from "@/components/PortfolioSection/PortfolioSection";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Image from "next/image";
+import AboutImage from "../assets/images/about-image.webp";
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
           >
             <div className="relative flex items-center justify-center w-full h-full sm:h-auto sm:w-auto">
               <Image
-                src="https://sdk.bitmoji.com/me/sticker/5_868ETNG03VgZJIAxzt5yATyVeig0bGqzyNqTVZDdc70Q2udYIwTQ/20054902.png?p=dD1zO2w9ZW4.v1&size=large"
+                src={AboutImage}
                 alt="About me placeholder"
                 width={3464}
                 height={2309}
