@@ -111,22 +111,22 @@ export default function Home() {
               <ul className="leading-6 list-disc list-outside pl-3.5">
                 <li className="pl-2">
                   <span className="font-bold">Peaker Services, inc.</span>{" "}
-                  (Contractor, September 2023 - June 2024): "Web Developer
+                  (Contractor, September 2023 - June 2024): &quot;Web Developer
                   responsible for redesigning and maintaining the company&#39;s
                   website, improving user experience, and optimizing the site
-                  for SEO."
+                  for SEO.&quot;
                 </li>
                 <li className="pl-2">
                   <span className="font-bold">DAJ Tech Solutions</span> (October
-                  2023 - Present): "Independent projects involving web
+                  2023 - Present): &quot;Independent projects involving web
                   development, consulting, and technology solutions for a
-                  variety of clients."
+                  variety of clients.&quot;
                 </li>
                 <li className="pl-2">
                   <span className="font-bold">Ping Software USA</span> (January
-                  2021 - October 2023): "Full-Stack Developer contributing to
+                  2021 - October 2023): &quot;Full-Stack Developer contributing to
                   the development of custom web applications and ensuring smooth
-                  project delivery."
+                  project delivery.&quot;
                 </li>
               </ul>
             </div>

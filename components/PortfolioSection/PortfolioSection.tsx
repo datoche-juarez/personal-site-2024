@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useSyncExternalStore } from "react";
 import Image, { StaticImageData } from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
@@ -26,12 +26,11 @@ const PortfolioSection = () => {
   const isMdUp = useMediaQuery("only screen and (min-width: 768px)");
   const isXlUp = useMediaQuery("only screen and (min-width: 1280px)");
 
-  const [hydrated, setHydrated] = useState(false);
-
-  // Set `hydrated` to true once the client-side is loaded
-  useEffect(() => {
-    setHydrated(true);
-  }, []);
+  const hydrated = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
 
   const [showMore, setShowMore] = useState(false);
 
